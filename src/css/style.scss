@@ -8,7 +8,7 @@
 @import "vendor/slick";
 
 // Abstracts
-@import "partials/abstracts/fontawesome/font-awesome";
+// @import "../fonts/fontAwesome/scss/font-awesome.scss";
 @import "partials/abstracts/mixins";
 // @import "partials/abstracts/placeholders";
 @import "partials/abstracts/fonts";
@@ -22,6 +22,9 @@
 
 @import "partials/components/header";
 @import "partials/components/footer";
+@import "partials/components/nav";
+@import "partials/components/stripe--contact";
+@import "partials/components/promo";
 
 // Components
 

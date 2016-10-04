@@ -3,13 +3,88 @@
   background-color: #21242b;
   color: rgba(255, 255, 255, 0.5);
 
+  .row {
+    justify-content: space-between;
+  }
+
+  &__contacts {
+    width: 70%;
+    @include mq($from:xs, $until:md){
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__socials {
+    width: 30%;
+    @include mq($from:xs, $until:md){
+      text-align: center;
+      width: 100%;
+    }
+
+    ul {
+      @include mq($from:xs, $until:md){
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__list {
+    margin-top: 0;
+    padding-left: 0;
+    @include mq($from:xs, $until:md){
+      flex-wrap: wrap;
+    }
+  }
+
   &__item {
     display: inline-block;
     font-size: 14px;
+    @include mq($from:xs, $until:md){
+      display: block;
+    }
+
+    i {
+      margin-right: 10px;
+      margin-left: 30px;
+      width: 24px;
+      height: 24px;
+      color: #fff;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+      text-align: center;
+      line-height: 24px;
+      border-radius: 2px;
+      background-color: $yellow;
+    }
   }
 
 
-  &__mail {
+  &__email,
+  &__phone {
+    color: rgba(255, 255, 255, 0.5);
+  }
 
+  &__item:nth-child(3) {
+    position: relative;
+
+    i {
+      position: absolute;
+      top: 12px;
+      left: -13px;
+    }
+
+    p {
+      margin-left: 55px;
+    }
+  }
+
+  &__socials-item {
+    display: inline-block;
+    padding: 0 10px;
+    a {
+      color: $blue;
+      font-size: $font-size-subtitle;
+    }
   }
 }
+
