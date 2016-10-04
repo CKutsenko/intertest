@@ -39,13 +39,14 @@
     <link type="text/plain" rel="author" href="humans.txt">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/b8dc28bd9a.js"></script>
   </head>
   <body>
     <!-- Header-->
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-8">
+          <div class="header__contacts">
             <ul class="header__list">
               <li class="header__item">
                 <p class="header__text">Есть вопросы?</p>
@@ -64,39 +65,325 @@
               </li>
             </ul>
           </div>
-          <div class="col-xs-12 col-md-4">
-            <ul class="header__socials">
-              <li class="header__socials-item">
-                <a href="twitter.com" target="_blank">
-                  <i class="fa fa-twitter"></i>
-                </a>
+          <div class="header__socials">
+            <ul>
+              <ul>
+                <li class="header__socials-item">
+                  <a href="twitter.com" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="header__socials-item">
+                  <a href="facbook.com" target="_blank">
+                    <i class="fa fa-facebook-official"></i>
+                  </a>
+                </li>
+                <li class="header__socials-item">
+                  <a href="instagram.com" target="_blank">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="header__socials-item">
+                  <a href="ru.linkedin.com" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="header__socials-item">
+                  <a href="vk.com" target="_blank">
+                    <i class="fa fa-vk"></i>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Nav-->
+    <nav class="nav">
+      <div class="container">
+        <div class="row">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="img/logo.png">
+            </a>
+          </div>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#">Главная</a>
               </li>
-              <li class="header__socials-item">
-                <a href="facbook.com" target="_blank">
-                  <i class="fa fa-facebook-official"></i>
-                </a>
+              <li class="nav__item">
+                <a href="#">Компания</a>
+                <ul class="nav__sub-menu">
+                  <li>
+                    <a>О компании</a>
+                  </li>
+                  <li>
+                    <a>История компании</a>
+                  </li>
+                  <li>
+                    <a>Для вас работают</a>
+                  </li>
+                  <li>
+                    <a>Партнеры</a>
+                  </li>
+                  <li>
+                    <a>FAQ</a>
+                  </li>
+                  <li>
+                    <a>Отзывы</a>
+                  </li>
+                </ul>
               </li>
-              <li class="header__socials-item">
-                <a href="instagram.com" target="_blank">
-                  <i class="fa fa-instagram"></i>
-                </a>
+              <li class="nav__item">
+                <a href="#">Услуги</a>
               </li>
-              <li class="header__socials-item">
-                <a href="ru.linkedin.com" target="_blank">
-                  <i class="fa fa-linkedin"></i>
-                </a>
+              <li class="nav__item">
+                <a href="#">Новости</a>
               </li>
-              <li class="header__socials-item">
-                <a href="vk.com" target="_blank">
-                  <i class="fa fa-vk"></i>
-                </a>
+              <li class="nav__item">
+                <a href="#">Контакты</a>
+              </li>
+              <li class="nav__item">
+                <div class="search">
+                  <form class="search__form">
+                    <input class="search__input" type="text" name="Lorem" placeholder="lorem" />
+                  </form>
+                  <a class="search__icon" href="#">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </header>
-    <main></main>
+    </nav>
+    <main>
+      <div class="stripe">
+        <div class="container">
+          <div class="row">
+            <p class="stripe__text">Редактируемый текст</p>
+            <a class="stripe__btn" href="#">Контакты
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--Promo-->
+      <section class="promo">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/s4.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 1</p>
+                  <p class="promo__sub-title">subtitle</p>
+                  <p class="promo__text">testtest</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/about1.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 2</p>
+                  <p class="promo__sub-title"></p>
+                  <p class="promo__text">At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today.</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/about1.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 3</p>
+                  <p class="promo__sub-title"></p>
+                  <p class="promo__text">At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today.</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/about1.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 4</p>
+                  <p class="promo__sub-title"></p>
+                  <p class="promo__text">At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today.</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/about1.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 5</p>
+                  <p class="promo__sub-title"></p>
+                  <p class="promo__text">At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today.</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/about1.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 6</p>
+                  <p class="promo__sub-title"></p>
+                  <p class="promo__text">At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today.</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/about1.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 7</p>
+                  <p class="promo__sub-title"></p>
+                  <p class="promo__text">At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today.</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="promo__box">
+                <div class="promo__item">
+                  <div class="promo__img">
+                    <img src="img/about1.jpg" alt>
+                  </div>
+                  <p class="promo__title">Вопрос 8</p>
+                  <p class="promo__sub-title"></p>
+                  <p class="promo__text">At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today.</p>
+                  <a class="promo__btn" href="#">Continue
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Features-->
+      <section class="features">
+        <div class="container">
+          <h2 class="features__title">Что мы предлагаем.</h2>
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="features__item">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <i class="fa fa-battery-full"></i>
+                  </div>
+                  <div class="col-xs-10">
+                    <h3 class="features__sub-title">Предложение 1</h3>
+                    <p class="features__text">Текст для предложения 1. Мы предлагаем самое качественное и лучшее.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="features__item">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <i class="fa fa-truck"></i>
+                  </div>
+                  <div class="col-xs-10">
+                    <h3 class="features__sub-title">Предложение 2</h3>
+                    <p class="features__text">Текст для предложения 2. Мы предлагаем самое качественное и лучшее.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="features__item">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <i class="fa fa-cube"></i>
+                  </div>
+                  <div class="col-xs-10">
+                    <h3 class="features__sub-title">Предложение 3</h3>
+                    <p class="features__text">Текст для предложения 3. Мы предлагаем самое качественное и лучшее.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="features__item">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <i class="fa fa-mail-forward"></i>
+                  </div>
+                  <div class="col-xs-10">
+                    <h3 class="features__sub-title">Предложение 4</h3>
+                    <p class="features__text">Текст для предложения 4. Мы предлагаем самое качественное и лучшее.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="features__item">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <i class="fa fa-plane"></i>
+                  </div>
+                  <div class="col-xs-10">
+                    <h3 class="features__sub-title">Предложение 5</h3>
+                    <p class="features__text">Текст для предложения 5. Мы предлагаем самое качественное и лучшее.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+              <div class="features__item">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <i class="fa fa-globe"></i>
+                  </div>
+                  <div class="col-xs-10">
+                    <h3 class="features__sub-title">Предложение 6</h3>
+                    <p class="features__text">Текст для предложения 6. Мы предлагаем самое качественное и лучшее.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer-->
     <script src="js/script.min.js"></script>
   </body>
