@@ -1,0 +1,7 @@
+mixin reviewsItem(img,name,text)
+  +b.reviews
+    +b.contant
+      +b.img
+        img(src= "img/" + img alt)
+      +e.H3.name #{name}
+      +e.P.text #{text}

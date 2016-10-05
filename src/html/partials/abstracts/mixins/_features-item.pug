@@ -1,0 +1,9 @@
+mixin featuresItem(class, title, text)
+  +e.item
+    .row
+      .col-xs-2
+        i(class="class")
+      .col-xs-10
+        +e.H3.title #{title}
+        +e.P.text #{text}
+

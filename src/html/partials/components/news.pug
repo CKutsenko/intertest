@@ -1,0 +1,13 @@
+include ../abstracts/mixins/_news-item.pug
+include ../abstracts/bemto/bemto.pug
+
++b.SECTION.news-block
+  .container
+    +e.H2.title Latest news.
+    .row
+      .col-xs-12.col-md-6.col-xl-4
+        +newsItem("6.jpg", "25 марта", "Новость 1", "It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...", "Ekaterina", "Warehouse")
+      .col-xs-12.col-md-6.col-xl-4
+        +newsItem("5.jpg", "25 марта", "Seafield logistics goes into administration", "It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...", "Ekaterina", "Jobs")
+      .col-xs-12.col-md-6.col-xl-4
+        +newsItem("4.jpg", "25 марта", "Transport managers grow scarce", "It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...", "Ekaterina", "Transport")

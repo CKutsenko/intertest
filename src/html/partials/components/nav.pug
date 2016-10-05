@@ -1,0 +1,42 @@
+include ../abstracts/bemto/bemto.pug
+
+//Nav
++b.NAV.nav
+  .container
+    .row
+      +e.logo
+        a(href="#")
+          img(src="img/logo.png")
+      +e.menu
+        +e.UL.list
+          +e.LI.item
+            a(href="#") Главная
+          +e.LI.item
+            a(href="#") Компания
+            +e.UL.sub-menu
+              li
+                a О компании
+              li
+                a История компании
+              li
+                a Для вас работают
+              li
+                a Партнеры
+              li
+                a FAQ
+              li
+                a Отзывы
+          +e.LI.item
+            a(href="#") Услуги
+          +e.LI.item
+            a(href="#") Новости
+          +e.LI.item
+            a(href="#") Контакты
+          +e.LI.item
+            +b.search
+              +e.FORM.form
+                +e.INPUT.input(type='text', name='Lorem', placeholder='lorem')
+              +e.A.icon(href="#")
+                i.fa.fa-search
+
+

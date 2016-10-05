@@ -1,0 +1,16 @@
+mixin newsItem(img,time,title,text,author,catigories)
+  +b.news
+    +e.img
+      +e.A.link(href="#")
+        img(src= "img/" + img alt)
+    +e.header
+      +e.H4.time #{time}
+      +e.H2.title #{title}
+    +e.contant
+      +e.P.text #{text}
+    +e.footer
+      +e.meta
+        i.fa.fa-user
+        +e.P.author #{author}
+        i.fa.fa-folder-open
+        +e.P.catigories #{catigories}
