@@ -38,3 +38,22 @@
     }
   }
 }
+
+.stripe-logo {
+  background-color: $blue;
+  padding: 10px 0;
+  .row {
+    justify-content: space-between;
+  }
+
+  &__block {
+    min-width: 16%;
+    padding: 10px 7px;
+  }
+
+  &__link {
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
