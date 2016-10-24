@@ -3,10 +3,12 @@ mixin promoItem(img, title, subtitle, text)
     +e.item
       +e.img
         img(src= "img/" + img alt)
-      +e.P.title #{title}
-      +e.P.sub-title #{subtitle}
-      +e.P.text #{text}
-      +e.A.btn(href="#") Continue
-        i.fa.fa-chevron-right
+      +e.header
+        +e.P.title #{title}
+        +e.P.subtitle #{subtitle}
+      +e.contant
+        +e.P.text #{text}
+        +e.A.btn(href="#") Continue
+          i.fa.fa-chevron-right
 
 
