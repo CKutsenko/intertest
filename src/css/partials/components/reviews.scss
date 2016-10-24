@@ -36,8 +36,10 @@
     background: #fff;
     width: 19px;
     height: 17px;
-    bottom: -5px;
+    bottom: -10px;
     left: 27px;
+border-bottom: 2px solid #cce9ed;
+border-left: 2px solid #cce9ed;
     -webkit-transform: skewY(-45deg);
     -ms-transform: skewY(-45deg);
     -o-transform: skewY(-45deg);
@@ -45,8 +47,6 @@
     z-index: 2;
     }
   }
-}
-
 
 .slick-slide {
   outline: none;
@@ -72,3 +72,5 @@
 .slick-prev {
   left: 3%;
 }
+}
+

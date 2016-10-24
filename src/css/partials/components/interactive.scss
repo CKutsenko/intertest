@@ -1,0 +1,58 @@
+.interactive {
+  background-image: url(../img/bg-plane2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 110px 0;
+  background-position: 30% 50%;
+
+  &__title {
+    font-size: 48px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    font-family: $font-family-roboto;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px 2px 3px;
+  }
+
+  &__text {
+    font-size: 18px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.247059) 0px 2px 3px;
+  }
+
+  &__btn-inner {
+    padding-top: 15px;
+  }
+
+  a {
+    line-height: 55px;
+    padding: 0px 35px;
+    font-size: 15px;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: .3s;
+    font-weight: bold;
+    box-sizing: content-box;
+  }
+
+  &__btn-quote {
+    background-color: $blue;
+    border: 2px solid $blue;
+    &:hover {
+      background-color: $grey;
+      border: 2px solid $grey;
+    }
+  }
+
+  &__btn-contact {
+    border: 2px solid #fff;
+    margin-left: 8px;
+    &:hover {
+      color: #000;
+      border: 2px solid #000;
+    }
+  }
+}

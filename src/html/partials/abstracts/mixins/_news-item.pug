@@ -1,16 +1,18 @@
-mixin newsItem(img,time,title,text,author,catigories)
+mixin newsItem(img,date, mounth, title,text,author,catigories)
   +b.news
     +e.img
       +e.A.link(href="#")
         img(src= "img/" + img alt)
     +e.header
-      +e.H4.time #{time}
-      +e.H2.title #{title}
+      +e.date-inner
+        +e.P.date #{date}
+        +e.P.mounth #{mounth}
+      +e.A.title #{title}
     +e.contant
       +e.P.text #{text}
     +e.footer
       +e.meta
         i.fa.fa-user
-        +e.P.author #{author}
+        +e.A.author(href="#") #{author}
         i.fa.fa-folder-open
-        +e.P.catigories #{catigories}
+        +e.A.catigories(href="#") #{catigories}

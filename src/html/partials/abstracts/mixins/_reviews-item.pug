@@ -1,7 +1,8 @@
 mixin reviewsItem(img,name,text)
   +b.reviews
     +e.contant
-      +e.img
-        img(src= "img/" + img alt)
-      +e.H3.name #{name}
-      +e.P.text #{text}
+      +e.box
+        +e.img
+          img(src= "img/" + img alt)
+        +e.H3.name #{name}
+        +e.P.text #{text}

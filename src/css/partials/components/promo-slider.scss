@@ -58,11 +58,7 @@
       background-color: $blue;
     }
   }
-}
 
-.promo-slider:hover .slick-arrow {
-  opacity: 1;
-}
 
 .slick-arrow {
   position: absolute;
@@ -78,12 +74,44 @@
   margin: auto 0;
   opacity: 0;
   transition: 1s;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transition: 0.3s;
+  }
+  &:hover {
+    &:before {
+     width: 13px;
+     height: 13px;
+    }
+  }
 }
 
 .slick-next {
   right: 3%;
+  &:before {
+    transform: rotate(-230deg);
+  }
 }
 
 .slick-prev {
   left: 3%;
+  &:before {
+    transform: rotate(-45deg);
+  }
+}
+}
+
+.promo-slider:hover .slick-arrow {
+  opacity: 1;
 }
