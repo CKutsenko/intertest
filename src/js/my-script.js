@@ -14,24 +14,35 @@ jQuery(document).ready(function($){
     $('.city__dropdown').toggle();
   });
 
-  /* изменение названия, телефона и почты при выборе города */
-  $('.city__item').on('click', function(){
-    $('.city__name').html($(this).html());
-    $('.city__email-wrapper').html('<a class="city__email" target="_blank" href="mailto:'+$(this).data("email")+'">'+$(this).data("email")+'</a>');
 
-    var tel = $(this).data("tel");
-    var hrefTel = tel.replace(/\D/g, "");
-    $('.city__tel-wrapper').html('<a class="city__tel" target="_blank" href="tel:+'+hrefTel+'">'+tel+'</a>');
+  var link_href;
+$('.form-inner__tabs-link a').on('click', function(e){
+  e.preventDefault();
 
-    if ($(this).data("tel2") !== undefined) {
-      var tel2 = $(this).data("tel2");
-      var hrefTel2 = tel2.replace(/\D/g, "");
-      $('<a class="city__tel" target="_blank" href="tel:+'+hrefTel2+'">'+tel2+'</a>').appendTo($('.city__tel-wrapper'));
-    }
+  $(this)
+    .closest('.form-inner__tabs-list')
+    .find('.form-inner__tabs-link.active')
+    .removeClass('active');
+  $(this)
+   .closest('.form-inner__tabs-link')
+   .addClass('active');
 
-    $('.city__dropdown').hide();
-    return false;
+  $(this)
+   .closest('.form-inner__tabs')
+   .find('.form-inner__tab-item.active')
+   .removeClass('active');
+  link_href = $(this).attr('href');
+  $(link_href).addClass('active');
+});
+
+// Set map
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -34.397, lng: 150.644},
+    zoom: 8
   });
+}
 
   /* галерея Promo slider */
   $('.promo-slider').slick({

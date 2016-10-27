@@ -1,4 +1,27 @@
+include ../abstracts/mixins/_form.pug
 include ../abstracts/bemto/bemto.pug
+
+//Form
+
++b.form-inner
+  .container
+    +e.tabs
+      +e.UL.tabs-list
+        +e.LI.tabs-link.active
+          a(href="#tab01") Заказать сертификат
+        +e.LI.tabs-link
+          a(href="#tab02") Задать вопрос
+        +e.LI.tabs-link
+          a(href="#tab03") Заказать звонок
+      +e.tabs-content
+        +e.tab-item.active(id="tab01")
+          +form(application)
+        +e.tab-item(id="tab02")
+          +form(questionheader)
+        +e.tab-item(id="tab03")
+          +form(call)
+
+
 
 // Footer
 +b.FOOTER.footer

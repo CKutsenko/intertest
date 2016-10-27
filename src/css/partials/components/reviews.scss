@@ -1,9 +1,10 @@
 .reviews-block {
   background-color: #f2f4f8;
-  padding: 50px 0;
+  padding: 50px 0 35px;
   &__title {
     font-size: $font-size-h2;
     font-weight: bold;
+    position: relative;
     span {
       color: $blue;
     }
@@ -16,6 +17,65 @@
     min-width: 40%;
     margin-left: 25px;
     height: 20px;
+    }
+  }
+.slick-slide {
+  outline: none;
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slick-list {
+  padding-bottom: 15px;
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: -90px;
+  right: 58px;
+  border: 2px solid #cce9ed;
+  font-size: 0;
+  top: -17%;
+  background-color: transparent;
+  outline: none;
+  transition: 0.5s;
+  &:after {
+    position: absolute;
+    content: "\f104";
+    font-family: 'FontAwesome';
+    text-indent: 0;
+    left: 14px;
+    top: 64%;
+    margin-top: -26px;
+    font-size: 28px;
+    color: $blue;
+  }
+
+  &:hover {
+    background: #cce9ed;
+  }
+}
+
+.slick-next {
+  right: 7%;
+      @include mq($from:xs, $until:md){
+      right: 25%;
+    }
+}
+
+.slick-prev {
+  left: 93%;
+  border-left: none;
+    &:after {
+    transform: rotate(-180deg);
+    left: 18px;
+    }
+      @include mq($from:xs, $until:md){
+      left: 75%;
     }
   }
 }
@@ -47,30 +107,5 @@ border-left: 2px solid #cce9ed;
     z-index: 2;
     }
   }
-
-.slick-slide {
-  outline: none;
-}
-
-.slick-slide {
-  position: relative;
-}
-
-.slick-arrow {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  top: -90px;
-  right: 58px;
-  border: 2px solid #cce9ed;
-}
-
-.slick-next {
-  right: 3%;
-}
-
-.slick-prev {
-  left: 3%;
-}
 }
 
