@@ -116,27 +116,38 @@
                 <a href="#">Компания</a>
                 <ul class="nav__sub-menu">
                   <li>
-                    <a>О компании</a>
+                    <a href="#">О компании</a>
                   </li>
                   <li>
-                    <a>История компании</a>
+                    <a href="#"> История компании</a>
                   </li>
                   <li>
-                    <a>Для вас работают</a>
+                    <a href="#"> Для вас работают</a>
                   </li>
                   <li>
-                    <a>Партнеры</a>
+                    <a href="#"> Партнеры</a>
                   </li>
                   <li>
-                    <a>FAQ</a>
+                    <a href="#"> FAQ</a>
                   </li>
                   <li>
-                    <a>Отзывы</a>
+                    <a href="#"> Отзывы</a>
                   </li>
                 </ul>
               </li>
               <li class="nav__item">
                 <a href="#">Услуги</a>
+                <ul class="nav__sub-menu">
+                  <li>
+                    <a href="#"> Сертификация</a>
+                  </li>
+                  <li>
+                    <a href="#"> Разработка технической документации</a>
+                  </li>
+                  <li>
+                    <a href="#"> Роспотребнадзор</a>
+                  </li>
+                </ul>
               </li>
               <li class="nav__item">
                 <a href="#">Новости</a>
@@ -715,7 +726,194 @@
           </div>
         </div>
       </section>
+      <!--Map-->
+      <div class="map" id="map"></div>
     </main>
+    <!--Form-->
+    <div class="form-inner">
+      <div class="container">
+        <div class="form-inner__tabs">
+          <ul class="form-inner__tabs-list">
+            <li class="form-inner__tabs-link active">
+              <a href="#tab01">Заказать сертификат</a>
+            </li>
+            <li class="form-inner__tabs-link">
+              <a href="#tab02">Задать вопрос</a>
+            </li>
+            <li class="form-inner__tabs-link">
+              <a href="#tab03">Заказать звонок</a>
+            </li>
+          </ul>
+          <div class="form-inner__tabs-content">
+            <div class="form-inner__tab-item active" id="tab01">
+              <section class="form form--application">
+                <h3 class="form__title"></h3>
+                <p class="form__text">Fill out the form to get your quote within the hour. We guaranty safe and timley product delivery either for your personal travel or your products.</p>
+                <form class="form__form" action="" method="" id="formApplication">
+                  <div class="form-group required">
+                    <input class="form__input" type="text" name="Имя" placeholder="Ваше имя:" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <input class="form__input" type="text" name="Продукция" placeholder="Наименование продукции:*" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <input class="form__input" type="email" name="Email" placeholder="Ваш e-mail:*" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group">
+                    <input class="form__input" type="tel" name="Телефон" placeholder="Контактный телефон:" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <select class="form__country-list">
+                      <option>Страна*</option>
+                      <option>Россия</option>
+                      <option>Беларусь</option>
+                      <option>Казахстан</option>
+                      <option>Украина</option>
+                      <option>Азербайджан</option>
+                      <option>Армения</option>
+                      <option>Грузия</option>
+                      <option>Молдавия</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <select class="form__region-list">
+                      <option>Регион:*</option>
+                      <option>Санкт-Петербург и Ленинградская область</option>
+                      <option>Москва и Московская область</option>
+                      <option>Новгородская область</option>
+                      <option>Псковская область</option>
+                      <option>Республика Карелия</option>
+                      <option>Мурманская область</option>
+                      <option>Калининградская область</option>
+                      <option>Вологодская область</option>
+                      <option>Тверская область</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <button class="btn btn--form" type="submit">Заказать</button>
+                    <p class="help-block help-block-success">Ваша заявка отправлена</p>
+                  </div>
+                </form>
+              </section>
+            </div>
+            <div class="form-inner__tab-item" id="tab02">
+              <section class="form form--questionheader">
+                <h3 class="form__title">Просто задайте свой вопрос заполнив форму ниже</h3>
+                <p class="form__text"></p>
+                <form class="form__form" action="" method="" id="formQuestionheader">
+                  <div class="form-group required">
+                    <input class="form__input" type="text" name="Имя" placeholder="Ваше имя:" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <input class="form__input" type="tel" name="Телефон" placeholder="Контактный телефон:" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <input class="form__input" type="email" name="Email" placeholder="Контактный e-mail*" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <textarea class="form__textarea" type="text" name="Ваш вопрос" placeholder="Ваш вопрос*"></textarea>
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <select class="form__country-list">
+                      <option>Страна*</option>
+                      <option>Россия</option>
+                      <option>Беларусь</option>
+                      <option>Казахстан</option>
+                      <option>Украина</option>
+                      <option>Азербайджан</option>
+                      <option>Армения</option>
+                      <option>Грузия</option>
+                      <option>Молдавия</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <select class="form__region-list">
+                      <option>Регион:*</option>
+                      <option>Санкт-Петербург и Ленинградская область</option>
+                      <option>Москва и Московская область</option>
+                      <option>Новгородская область</option>
+                      <option>Псковская область</option>
+                      <option>Республика Карелия</option>
+                      <option>Мурманская область</option>
+                      <option>Калининградская область</option>
+                      <option>Вологодская область</option>
+                      <option>Тверская область</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <button class="btn btn--form" type="submit">Спросить</button>
+                    <p class="help-block help-block-success">Ваш вопрос отправлен</p>
+                  </div>
+                </form>
+              </section>
+            </div>
+            <div class="form-inner__tab-item" id="tab03">
+              <section class="form form--call">
+                <h3 class="form__title">Сэкономьте время!</h3>
+                <p class="form__text">Просто заполните форму</p>
+                <form class="form__form" action="" method="" id="formCall">
+                  <div class="form-group required has-success">
+                    <input class="form__input" type="text" name="Продукция" placeholder="Наименование продукции:*" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required has-error">
+                    <input class="form__input" type="text" name="Имя" placeholder="Ваше имя:" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <input class="form__input" type="email" name="Email" placeholder="Ваш e-mail:*" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <input class="form__input" type="tel" name="Телефон" placeholder="Контактный телефон:" />
+                    <p class="help-block help-block-error">Ошибка заполнения поля формы</p>
+                  </div>
+                  <div class="form-group required">
+                    <select class="form__country-list">
+                      <option>Страна*</option>
+                      <option>Россия</option>
+                      <option>Беларусь</option>
+                      <option>Казахстан</option>
+                      <option>Украина</option>
+                      <option>Азербайджан</option>
+                      <option>Армения</option>
+                      <option>Грузия</option>
+                      <option>Молдавия</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <select class="form__region-list">
+                      <option>Регион:*</option>
+                      <option>Санкт-Петербург и Ленинградская область</option>
+                      <option>Москва и Московская область</option>
+                      <option>Новгородская область</option>
+                      <option>Псковская область</option>
+                      <option>Республика Карелия</option>
+                      <option>Мурманская область</option>
+                      <option>Калининградская область</option>
+                      <option>Вологодская область</option>
+                      <option>Тверская область</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <button class="btn btn--form" type="submit">Заказать сертификат</button>
+                    <p class="help-block help-block-success">Ваша заявка отправлена</p>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Footer-->
     <footer class="footer">
       <div class="container">
