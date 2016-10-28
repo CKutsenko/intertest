@@ -1,0 +1,49 @@
+include ../abstracts/mixins/_page-news-item.pug
+include ../abstracts/bemto/bemto.pug
+
++b.white-bgr
+  .container
+    .row
+      +b.SECTION.page-news
+          +PageNewsItem("25", "Мар", "6.jpg","Новость 1", "Ekaterina", "Warehouse", "It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...")
+          +PageNewsItem("25", "Мар", "5.jpg","Seafield logistics goes into administration", "Ekaterina", "Warehouse", "Many of you will be aware that the Transport Select Committee is conducting an inquiry into the skills and workforce planning of the road haulage sector.  In particular the Committee is investigating what action Government has taken to address concer...")
+          +PageNewsItem("25", "Мар", "4.jpg","Transport managers grow scarce", "Ekaterina", "Transport", "It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...")
+          +PageNewsItem("25", "Мар", "3.jpg","Новость 1", "Ekaterina", "Warehouse", "Many of you will be aware that the Transport Select Committee is conducting an inquiry into the skills and workforce planning of the road haulage sector.  In particular the Committee is investigating what action Government has taken to address concer...")
+          +PageNewsItem("25", "Мар", "2.jpg","Новость 1", "Ekaterina", "Warehouse", "It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...")
+          +PageNewsItem("25", "Мар", "7.jpg","Новость 1", "Ekaterina", "Warehouse", "It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...")
+      +b.ASIDE.news-meta
+        +e.wrapper
+          +e.H2.title Последние новости
+          +e.A.sub-title(href="#") Новость 1
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="#") Seafield logistics goes into administration
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="#") Transport managers grow scarce
+          +e.P.time 25.03.2016
+        +e.wrapper--pd
+          +e.H2.title Рубрики
+          +e.A.heading(href="#") Jobs
+          +e.A.heading(href="#") Logistics
+          +e.A.heading(href="#") Tip & Trick
+          +e.A.heading(href="#") Transport
+          +e.A.heading(href="#") Warehouse
+        +e.wrapper--blue
+          +e.H3.question How can we help you?
+          +e.P.text Our customer service standards provide information on how we will handle your enquiry. There is also compliments and complaints information to help you when you lodge feedback with us.
+          +e.A.btn(href="#") contact us
+            .fa.fa-chevron-right
+        +e.wrapper--pd
+          +e.H2.title Теги
+          +e.A.tag(href="#") Committee
+          +e.A.tag(href="#") Grow
+          +e.A.tag(href="#") Huge
+          +e.A.tag(href="#") Jobs
+          +e.A.tag(href="#") Logistic
+          +e.A.tag(href="#") Manager
+          +e.A.tag(href="#") Recruit
+          +e.A.tag(href="#") Tip
+          +e.A.tag(href="#") Transport
+          +e.A.tag(href="#") Trick
+          +e.A.tag(href="#") Warehouse
+
+
