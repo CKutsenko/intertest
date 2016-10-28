@@ -35,6 +35,26 @@ $('.form-inner__tabs-link a').on('click', function(e){
   $(link_href).addClass('active');
 });
 
+  /* Scroll to top */
+
+  $(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 102) {
+            $('.totop').fadeIn();
+        } else {
+            $('.totop').fadeOut();
+        }
+    });
+
+    $('.totop').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+});
+
 // Set map
 var map;
 function initMap() {

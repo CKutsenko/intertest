@@ -12,7 +12,7 @@ include ../abstracts/bemto/bemto.pug
           +e.LI.item
             a(href="#") Главная
           +e.LI.item
-            a(href="#") Компания
+            +e.A.link(href="#") Компания
             +e.UL.sub-menu
               li
                 a(href="#") О компании
@@ -27,7 +27,7 @@ include ../abstracts/bemto/bemto.pug
               li
                 a(href="#")  Отзывы
           +e.LI.item
-            a(href="#") Услуги
+            +e.A.link(href="#") Услуги
             +e.UL.sub-menu
               li
                 a(href="#")  Сертификация
@@ -36,7 +36,7 @@ include ../abstracts/bemto/bemto.pug
               li
                 a(href="#")  Роспотребнадзор
           +e.LI.item
-            a(href="#") Новости
+            a(href="news.html") Новости
           +e.LI.item
             a(href="#") Контакты
           +e.LI.item
@@ -45,5 +45,7 @@ include ../abstracts/bemto/bemto.pug
                 +e.INPUT.input(type='text', name='Lorem', placeholder='lorem')
               +e.A.icon(href="#")
                 i.fa.fa-search
++b.A.totop(href="#" id="toTop")
+  +e.tringle
 
 
