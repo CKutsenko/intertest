@@ -1,0 +1,71 @@
+.staff {
+  flex: 0 0 70%;
+  position: relative;
+    min-height: 1px;
+    padding-right: .625rem;
+    padding-left: .625rem;
+    overflow: hidden;
+  @include mq($from:xs, $until:md){
+    flex: 0 0 100%;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    span {
+      color: $blue;
+    }
+
+    &:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: url(../img/bg-heading.svg);
+    min-width: 50%;
+    margin-left: 25px;
+    height: 20px;
+    }
+  }
+  &__text {
+    color: #666e70;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: $font-family;
+  }
+  &__name {
+    font-size: 18px;
+    margin: 15px 0 0;
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+  &__subtitle {
+    font-size: 15px;
+    color: $blue;
+    margin-top: 0;
+  }
+
+  &__btn {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $blue;
+    text-align: center;
+    line-height: 36px;
+    color: $blue;
+    transition: .3s;
+    &:hover {
+      color: $black;
+      border: 2px solid $black;
+    }
+  }
+  &__title--second {
+    padding-top: 35px;
+  }
+  &__box{
+      @include mq($from:xs, $until:md){
+    padding: 15px 0;
+  }
+  }
+}

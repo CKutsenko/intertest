@@ -1,0 +1,17 @@
+mixin staffItem(img, name, post, text)
+  +e.box
+    +e.img
+      img(src= "img/" + img alt)
+    +e.body
+      +e.P.name #{name}
+      +e.P.subtitle #{post}
+      +e.P.text #{text}
+    +e.socials
+      +e.A.btn(href="#")
+        i.fa.fa-facebook
+      +e.A.btn(href="#")
+        i.fa.fa-twitter
+      +e.A.btn(href="#")
+        i.fa.fa-linkedin
+      +e.A.btn(href="#")
+        i.fa.fa-google-plus
