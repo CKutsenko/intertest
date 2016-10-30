@@ -10258,6 +10258,25 @@ $('.form-inner__tabs-link a').on('click', function(e){
   $(link_href).addClass('active');
 });
 
+$('.page-about-us__tabs-link a').on('click', function(e){
+  e.preventDefault();
+
+  $(this)
+    .closest('.page-about-us__tabs-list')
+    .find('.page-about-us__tabs-link.active')
+    .removeClass('active');
+  $(this)
+   .closest('.page-about-us__tabs-link')
+   .addClass('active');
+
+  $(this)
+   .closest('.page-about-us__tabs')
+   .find('.page-about-us__tab-item.active')
+   .removeClass('active');
+  link_href = $(this).attr('href');
+  $(link_href).addClass('active');
+});
+
   /* Scroll to top */
 
   $(document).ready(function () {
@@ -10277,6 +10296,14 @@ $('.form-inner__tabs-link a').on('click', function(e){
         return false;
     });
 });
+
+
+  /* галерея About-us */
+  $('.page-about-us__img-slider').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 1
+  });
 
 // Set map
 var map;
@@ -10299,6 +10326,8 @@ function initMap() {
     fade: true,
      cssEase: 'linear'
   });
+
+
 
 
   /* Gratitude in the modal window */
