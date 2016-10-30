@@ -1,0 +1,197 @@
+.page-about-us {
+  flex: 0 0 70%;
+  position: relative;
+    min-height: 1px;
+    padding-right: .625rem;
+    padding-left: .625rem;
+    overflow: hidden;
+  @include mq($from:xs, $until:md){
+    flex: 0 0 100%;
+  }
+  &__img {
+    position: relative;
+  }
+
+  &__img-slider {
+    padding-top:40px;
+  }
+
+  .slick-arrow {
+    font-size: 0;
+    outline: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    bottom: 20px;
+    transition: .3s;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  .slick-prev {
+    right: 80px;
+    z-index: 100;
+    transition: .3s;
+    &:hover {
+      &:after {
+        color: #000;
+      }
+    }
+   &:after {
+    content: "\f105";
+    position: absolute;
+    text-indent: 0;
+    right: 19px;
+    top: 2px;
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    transform: rotate(180deg);
+    }
+  }
+
+
+  .slick-next {
+    right: 20px;
+    transition: .3s;
+    &:hover {
+      &:after {
+        color: #000;
+      }
+    }
+    &:after {
+      content: "\f105";
+    position: absolute;
+    text-indent: 0;
+    right: 17px;
+    top: 2px;
+    font-family: 'FontAwesome';
+    font-size: 28px;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    span {
+      color: $blue;
+    }
+    &:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: url(../img/bg-heading.svg);
+    min-width: 60%;
+    margin-left: 25px;
+    height: 20px;
+    }
+  }
+
+  &__text {
+    color: #666e70;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    line-height: 1.8;
+  }
+
+  &__contact-stripe {
+    background-color: $yellow;
+    padding: 20px;
+    margin: 40px 0 30px;
+  }
+
+  &__stripe-title {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    line-height: 1.5;
+    font-family: 'Roboto';
+    font-weight: 700;
+  }
+
+   &__btn-contact,
+   &__btn-services {
+    line-height: 43px;
+    padding: 0px 35px;
+    font-size: 15px;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: .3s;
+    font-weight: 700;
+  }
+
+  &__btn-contact {
+    background-color: #000;
+    border: 2px solid #000;
+    &:hover {
+      background-color: $blue;
+      border: 2px solid $blue;
+    }
+  }
+
+  &__btn-services {
+    border: 2px solid;
+    color: #000;
+    margin-left: 8px;
+    @include mq($from:xs, $until:md){
+      margin-top: 20px;
+      margin-left: 0;
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__img-safe {
+    margin-top: 30px;
+  }
+
+&__tabs-list {
+    text-align: left;
+    margin: 30px 0;
+    padding: 0 5px;
+    list-style: none;
+    background: #21242b;
+  }
+
+  &__tabs-link {
+    display: inline-block;
+
+    a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    border-top: 5px solid transparent;
+    }
+  }
+
+  &__tab-item {
+    display: none;
+  }
+
+  &__tabs-content {
+    text-align: left;
+  }
+}
+
+.page-about-us__tab-item.active  {
+  display: block;
+}
+
+.page-about-us__tabs-link.active {
+  a {
+    background-color: #fff;
+    color: #000;
+    border-top: 5px solid $blue;
+  }
+}

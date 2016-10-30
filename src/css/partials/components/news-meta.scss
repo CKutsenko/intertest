@@ -122,4 +122,60 @@
       color: $black;
     }
   }
+
+  &__wrapper--black {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  &__servises-title {
+    background-color: #21242b;
+    display: block;
+    padding: 15px 60px 15px 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &:after {
+    content: "\f054";
+    font-family: "FontAwesome";
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+    right: 21px;
+    font-weight: normal;
+    }
+
+    &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 57px;
+    background-color: $blue;
+    transition: .3s;
+    }
+
+    &:hover {
+      &:before {
+        background-color: $yellow;
+      }
+    }
+  }
+
+  &__servises-list {
+    background-color: #21242b;
+    margin: 0;
+    list-style-type: none;
+    padding: 20px;
+  }
+
+  &__servises-item {
+    line-height: 1.8;
+    a{
+      color: #fff;
+    }
+  }
 }

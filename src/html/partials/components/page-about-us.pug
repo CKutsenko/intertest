@@ -1,0 +1,78 @@
+include ../abstracts/bemto/bemto.pug
+
++b.white-bgr
+  .container
+    .row
+      +b.SECTION.page-about-us
+        +e.img-slider
+          +e.img
+            img(src="img/ab1.jpg" alt="services1")
+          +e.img
+            img(src="img/ab2.jpg" alt="services2")
+          +e.img
+            img(src="img/ab3.jpg" alt="services3")
+        +e.text-wrapper
+          +e.H3.title Обзор
+            span компании
+          +e.P.text At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today. In addition to Truckload (TL) services, we have expanded our reach on the asset based side to include expedited services, reverse logistics and volume Less-Than-Truckload (LTL) shipments; as well as a compliment of non-asset based solutions to service our customers’ needs throughout North America.
+          +e.P.text Our family-run business values hard work, respect, commitment and teamwork and our workplace is characterized by the high energy, enthusiasm and effort of our employees who thrive in this positive environment. We are committed to providing our customers with first-rate service, which starts with our employees’ dedication to our enterprise of services.
+          +e.P.text The commitment we have to safety and security is unmatched. We pride ourselves on posting industry leading Compliance, Safety, Accountability (CSA) scores, as well as an industry low claims ratio to give you and your customers that piece of mind when your freight is in our hands. Our primary obligation to our customers and our community starts with the hiring and training of our team members and our pledge to put the safest drivers and equipment on the road.
+          +e.P.text From our experienced drivers to our knowledgeable office staff, Canava Transport has the desire and commitment to work hand-in-hand to develop transportation solution that is truly customized to your needs.
+        +e.contact-stripe
+          +e.P.stripe-title We will take care of your cargo or your passenger and deliver them safe and on time.
+          +e.btn-inner
+          +e.A.btn-contact(href="#") Контакты
+            i.fa.fa-chevron-right
+          +e.A.btn-services(href="#") Услуги
+            i.fa.fa-chevron-right
+        .row
+          .col-xs-12.col-md-6
+            +e.tabs
+              +e.UL.tabs-list
+                +e.LI.tabs-link.active
+                  a(href="#safe01") Безопасность
+                +e.LI.tabs-link
+                  a(href="#safe02") Защита
+              +e.tabs-content
+                +e.tab-item.active(id="safe01")
+                  +e.P.text At Canava Transport, ensuring the safety of our customers, employees and our communities is our priority. We understand the importance of continuous training and are proud of our safety knowledge, experienced staff and ability to exceed industry standards year after year. We have established and continually maintain excellent motor carrier safety ratings and low accident frequencies.
+                  +e.P.text As a company, we have a solid safety performance history and will continue to be a leader in the area of safety and compliance, due to the dedication and professionalism of our fleet of drivers and vehicle maintenance personnel.
+                +e.tab-item(id="safe02")
+                  +e.P.text At Canava Transport, we offer industry-leading asset protection and security compliance programs.
+                  +e.P.text Canava Transport understands that our customers may have important and unique needs related to homeland security regulatory compliance, high-risk products, or brand protection. We offer consultation and proactive partnership to ensure that our customers’ security needs are met.
+                  +e.P.text By leveraging modern and proven technologies, we provide for the integrity of customer assets while in-transit or at one of our facilities.
+          .col-xs-12.col-md-6
+            +e.img-safe
+              img(src="img/serv1.jpg" alt="serv1")
+            +e.img-safe
+              img(src="img/serv2.jpg" alt="serv2")
+
+
+      +b.ASIDE.news-meta
+        +e.wrapper--black
+          +e.A.servises-title(href="#") Сертификация
+          +e.UL.servises-list
+            +e.LI.servises-item
+              a(href="#") — Сертификат ТР ТС
+            +e.LI.servises-item
+              a(href="#") — Декларация ТР ТС
+            +e.LI.servises-item
+              a(href="#") — Обязательная сертификация ГОСТ Р
+            +e.LI.servises-item
+              a(href="#") — Добровольная сертификация ГОСТ Р
+          +e.A.servises-title(href="#") Разработка технической документации
+          +e.A.servises-title(href="#") Роспотребнадзор
+        +e.wrapper
+          +e.H2.title Последние новости
+          +e.A.sub-title(href="#") Новость 1
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="#") Seafield logistics goes into administration
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="#") Transport managers grow scarce
+          +e.P.time 25.03.2016
+        +e.wrapper--blue
+          +e.H3.question How can we help you?
+          +e.P.text Our customer service standards provide information on how we will handle your enquiry. There is also compliments and complaints information to help you when you lodge feedback with us.
+          +e.A.btn(href="#") contact us
+            .fa.fa-chevron-right
+
