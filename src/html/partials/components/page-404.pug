@@ -1,0 +1,19 @@
+include ../abstracts/bemto/bemto.pug
+
+//404
+
++b.SECTION.page-404
+  .container
+    .row
+      .col-xs-12
+        +e.wrapper
+          +e.inner
+            +e.H2.title Похоже что-то пошло не так.
+            +e.P.text Страницы, которую вы ищите, не существует. Пожалуйста, воспользуйтесь поиском
+            +e.input-inner
+              +e.INPUT.search(type="text" name="Поиск" placeholder="поиск")
+              +e.A.arrow(href="#")
+          +e.inner
+            +e.img
+              img(src="img/404.png" alt="404")
+

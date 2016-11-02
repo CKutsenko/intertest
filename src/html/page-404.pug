@@ -1,0 +1,16 @@
+extends partials/templates/template.pug
+
+block content
+  +b.pages-header
+    .container
+      .row
+        +e.H1.title 404 - Старница не найдена
+  +b.breadcrumbs
+    .container
+      .row
+        +e.wrapper
+          i.fa.fa-map-marker
+          +e.SPAN.text Вы здесь:
+          +e.A.link(href="index.html") Главная
+          +e.SPAN.this 404 - Старница не найдена
+  include partials/components/page-404.pug
