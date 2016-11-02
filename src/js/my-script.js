@@ -9,6 +9,11 @@ jQuery(document).ready(function($){
     $('.nav__list-wrapper').toggle();
   });
 
+    $('.search__icon').click(function(e){
+   e.preventDefault();
+   $('.search__form').toggle();
+  });
+
     // var map = new GMaps({
     //     el: '.office__map',
     //     lat: 56.8378081,

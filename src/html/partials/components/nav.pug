@@ -5,12 +5,12 @@ include ../abstracts/bemto/bemto.pug
   .container
     .row
       +e.logo
-        a(href="#")
+        a(href="index.html")
           img(src="img/logo.png")
       +e.menu
         +e.UL.list
           +e.LI.item
-            a(href="#") Главная
+            a(href="index.html") Главная
           +e.LI.item
             +e.A.link(href="about-us.html") Компания
             +e.UL.sub-menu
@@ -42,7 +42,8 @@ include ../abstracts/bemto/bemto.pug
           +e.LI.item
             +b.search
               +e.FORM.form
-                +e.INPUT.input(type='text', name='Lorem', placeholder='lorem')
+                +e.INPUT.input(type="text" name="Поиск" placeholder="поиск")
+                +e.A.arrow(href="#")
               +e.A.icon(href="#")
                 i.fa.fa-search
 +b.A.totop(href="#" id="toTop")

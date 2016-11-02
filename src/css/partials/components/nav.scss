@@ -48,6 +48,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
       a {
         color: $black;
+        transition: 0.2s;
+        &:hover {
+          color: $blue;
+        }
       }
     }
 
@@ -100,8 +104,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   }
 
 .search {
+
   &__form {
+    position: absolute;
+    width: 280px;
     display: none;
+    top: 100px;
+    right: -35px;
+  }
+  &__input {
+    background: rgba(255, 255, 255, 1);
+    border: none;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 45px;
+    width: 90%;
+    padding: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    border-radius: 2px;
+    outline: none;
+  }
+
+  &__arrow {
+background-image: url(../img/arrow.svg);
+    background-color: transparent;
+    width: 24px;
+    height: 11px;
+    text-indent: -9999px;
+    padding: 0;
+    position: absolute;
+    right: 13%;
+    top: 17px;
+    -webkit-opacity: 0.3;
+    -khtml-opacity: 0.3;
+    -moz-opacity: 0.3;
+    opacity: 0.3;
+    &:hover {
+      opacity: .8;
+    }
   }
 }
 
