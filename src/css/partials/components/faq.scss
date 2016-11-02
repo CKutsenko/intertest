@@ -1,0 +1,113 @@
+.faq {
+  flex: 0 0 70%;
+  position: relative;
+    min-height: 1px;
+    padding-right: .625rem;
+    padding-left: .625rem;
+    overflow: hidden;
+  @include mq($from:xs, $until:md){
+    flex: 0 0 100%;
+  }
+  &__img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit:cover;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 0;
+    span {
+      color: $blue;
+    }
+
+    &:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    background: url(../img/bg-heading.svg);
+    min-width: 45%;
+    margin-left: 25px;
+    height: 20px;
+    }
+  }
+  &__text {
+    color: #666e70;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: $font-family;
+    padding-bottom: 35px;
+  }
+
+  &__wrapper {
+
+  }
+
+  &__subtext {
+    display: none;
+    margin: 0;
+    padding: 0 0 0 50px;
+    color: #666e70;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: $font-family;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    cursor: pointer;
+        margin: 0;
+    position: relative;
+    font-size: 15px;
+    display: block;
+    padding: 8px 0 7px 50px;
+    font-family: inherit;
+        color: #21242b;
+    line-height: 1.1;
+    font-family: $font-family;
+    font-weight: bold;
+    margin-bottom: 15px;
+    &:after {
+      font-family: "FontAwesome";
+    position: absolute;
+    font-size: 14px;
+    content: "\f077";
+    left: 0;
+    top: 50%;
+    margin-top: -16px;
+    font-weight: normal;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    background-color: $blue;
+    }
+  }
+}
+
+.subtitle-close {
+  &:after {
+      font-family: "FontAwesome";
+    position: absolute;
+    font-size: 14px;
+    content: "\f078";
+    left: 0;
+    top: 50%;
+    margin-top: -16px;
+    font-weight: normal;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    background-color: #21242b;
+  }
+}
