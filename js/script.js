@@ -10232,11 +10232,33 @@ jQuery(document).ready(function($){
     $('.nav__list-wrapper').toggle();
   });
 
-  /* City list */
-  $('.city__name').click(function(){
-    $('.city__dropdown').toggle();
+    $('.search__icon').click(function(e){
+   e.preventDefault();
+   $('.search__form').toggle();
   });
 
+    // var map = new GMaps({
+    //     el: '.office__map',
+    //     lat: 56.8378081,
+    //     lng: 60.5950772,
+    //     scrollwheel: false
+    // });
+    // map.addMarker({
+    //     lat: 56.8378081,
+    //     lng: 60.5950772,
+    // });
+
+  $('.faq__subtitle').click(function(e){
+    e.preventDefault();
+    if($(this).next('.faq__subtext').is(":visible")) {
+      $(this).next('.faq__subtext').slideUp();
+      $('.faq__subtitle').addClass('subtitle-close');
+    } else {
+      $(this).closest('.faq__accordion').find('.faq__subtext').slideUp();
+      $(this).next('.faq__subtext').slideDown();
+      $('.faq__subtitle').removeClass('subtitle-close');
+    }
+  });
 
   var link_href;
 $('.form-inner__tabs-link a').on('click', function(e){
