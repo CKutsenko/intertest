@@ -1,0 +1,47 @@
+include ../abstracts/mixins/_services-item.pug
+include ../abstracts/bemto/bemto.pug
+
+//Page
++b.ARTICLE.page
+  .container
+    .row
+      .col-xs-12
+        +e.H2.title Кому и зачем нужна сертификация?
+        +e.text Сертификация необходима организациям для подтверждения соответствия всем строгим требованиям и нормам технической документации. И это не просто очередная бюрократическая издержка — наличие сертификата одинаково важно для обеих сторон:
+        +e.UL.list
+          +e.LI.item <b>Покупатель</b> может быть спокоен относительно качества предлагаемой продукции или услуги. Осуществляется сертификация исключительно аккредитованными учреждениями, что исключает возможность наличия подтверждающих документов у недобросовестных компаний.
+          +e.LI.item <b>Продавец</b> получает кредит доверия потенциального потребителя. Даже при отсутствии рекомендаций от знакомых или отзывов в сети, само наличие сертификата говорит о том, что товары и/или услуги прошли проверку у объективных органов и отвечают принятым нормам.
+        +e.H2.subtitle Какие виды сертификации бывают?
+        +e.P.text <b>Обязательная сертификация</b> Необходима для того, чтобы подтвердить соответствие требованиям, установленным законодательно. Выпустить в свободное обращение товары, входящие в утвержденный перечень, не имея на них нужных сертификатов, попросту невозможно.
+        +e.P.text <b>Добровольная сертификация.</b> Проводится по собственной инициативе организации с целью:
+        +e.UL.list
+          +e.LI.item улучшения качества товаров и услуг;
+          +e.LI.item повышения конкурентоспособности;
+          +e.LI.item повышения лояльности финансовых компаний;
+          +e.LI.item эффективной работы с госучреждениями;
+          +e.LI.item возможности участвовать в международных тендерах.
++b.SECTION.services
+  .container
+    .row
+      .col-xs-12.col-md-6
+        +servicesItem('8-2.jpg',
+        'Логистические решения',
+        'Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.')
+      .col-xs-12.col-md-6
+        +servicesItem('6-3.jpg',
+        'Сертификация качества',
+        'When it comes to multimodal transport services, Canava Transport has connections you can trust.')
+      .col-xs-12.col-md-6
+        +servicesItem('5-3.jpg',
+        'Категория 3',
+        'Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.')
+      .col-xs-12.col-md-6
+        +servicesItem('4-3.jpg',
+        'Категория 4',
+        'Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.')
++b.SECTION.promo-services
+  .container
+    +e.H2.title As always… please let us know if there is anything else we could be doing to serve you better! thank you for your business and for your support!!
+    +e.H3.subtitle Canava team
+
+
