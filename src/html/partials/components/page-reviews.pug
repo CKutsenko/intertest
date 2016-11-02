@@ -1,0 +1,46 @@
+include ../abstracts/mixins/_reviews-item.pug
+include ../abstracts/bemto/bemto.pug
+
++b.white-bgr
+  .container
+    .row
+      +b.SECTION.page-reviews
+        +e.img
+          img(src="img/clients2.jpg" alt="clients2")
+        +e.H2.title What clients
+          span says.
+        +e.wrapper
+          +e.column50
+            +reviewsItem("star.png","SaNora Anderson","Canava is great to work with. They have many locations, competitive rates, and their staff is excellent will go above and beyond for their partners. I look forward to working with them in the future.")
+            +reviewsItem("star.png","SaNora Anderson","Thank you for delivering the chairs to us so quickly. Your delivery guys were most helpful and courteous. You have been a pleasure to deal with and we will not hesitate to use your services again or recommend you.")
+          +e.column50
+            +reviewsItem("star.png","SaNora Anderson","Canava is great to work with. They have many locations, competitive rates, and their staff is excellent will go above and beyond for their partners. I look forward to working with them in the future.You have been a pleasure to deal with and we will not hesitate to use your services again or recommend you.")
+            +reviewsItem("star.png","SaNora Anderson","Canava is great to work with. They have many locations, competitive rates, and their staff is excellent will go above and beyond for their paror recommend you.")
+        +e.wrapper
+      +b.ASIDE.news-meta
+        +e.wrapper--black
+          +e.A.servises-title(href="#") Сертификация
+          +e.UL.servises-list
+            +e.LI.servises-item
+              a(href="#") — Сертификат ТР ТС
+            +e.LI.servises-item
+              a(href="#") — Декларация ТР ТС
+            +e.LI.servises-item
+              a(href="#") — Обязательная сертификация ГОСТ Р
+            +e.LI.servises-item
+              a(href="#") — Добровольная сертификация ГОСТ Р
+          +e.A.servises-title(href="#") Разработка технической документации
+          +e.A.servises-title(href="#") Роспотребнадзор
+        +e.wrapper
+          +e.H2.title Последние новости
+          +e.A.sub-title(href="#") Новость 1
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="#") Seafield logistics goes into administration
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="#") Transport managers grow scarce
+          +e.P.time 25.03.2016
+        +e.wrapper--blue
+          +e.H3.question How can we help you?
+          +e.P.text Our customer service standards provide information on how we will handle your enquiry. There is also compliments and complaints information to help you when you lodge feedback with us.
+          +e.A.btn(href="#") contact us
+            .fa.fa-chevron-right
