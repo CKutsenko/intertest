@@ -18,6 +18,7 @@
   &__item {
     overflow: hidden;
     position: relative;
+    transition: .5s;
   }
 
   &__header {
@@ -45,7 +46,10 @@
     visibility: hidden;
     transform: translateX(-100%);
     opacity: 0;
-    transition: 0.3;
+    transition: .5s;
+    @include mq($from:xs, $until:xl){
+      padding: 5px;
+    }
   }
 
   &__title {
@@ -85,6 +89,9 @@
     line-height: 1.8;
     margin-top: 0;
     margin-bottom: 20px;
+    @include mq($from:xs, $until:xl){
+      line-height: 1.2;
+    }
   }
 
   &__btn {
@@ -94,6 +101,10 @@
     text-transform: uppercase;
     position: relative;
     background-color: $yellow;
+    transition: .3s;
+    &:hover {
+      background-color: $blue;
+    }
   }
 }
 

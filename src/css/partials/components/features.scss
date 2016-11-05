@@ -50,6 +50,21 @@
     }
   }
 
+  .fa-cube,
+  .fa-mail-forward,
+  .fa-globe {
+    &:before {
+      left: 13px;
+    }
+  }
+
+  .fa-plane {
+    &:before {
+      left: 15px;
+      top: 27px;
+    }
+  }
+
   &__box {
     z-index: 10;
     &:before {

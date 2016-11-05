@@ -58,6 +58,11 @@
     }
   }
 
+  &__adress {
+    line-height: 4;
+    margin: 0;
+  }
+
 
   &__email,
   &__phone {
@@ -71,10 +76,17 @@
       position: absolute;
       top: 12px;
       left: -13px;
+    @include mq($from:xs, $until:md){
+      position: static;
+      }
     }
 
     p {
       margin-left: 55px;
+    @include mq($from:xs, $until:md){
+      display: inline-block;
+      margin: 0;
+      }
     }
   }
 
