@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   padding: 110px 0;
   background-position: 30% 50%;
+    @include mq($from:xs, $until:md){
+      padding-top: 60px;
+    }
 
   &__title {
     font-size: 48px;
@@ -13,6 +16,9 @@
     color: #fff;
     margin-bottom: 10px;
     text-shadow: rgba(0, 0, 0, 0.247059) 0px 2px 3px;
+    @include mq($from:xs, $until:md){
+      font-size: 30px;
+    }
   }
 
   &__text {
@@ -53,6 +59,10 @@
     &:hover {
       color: #000;
       border: 2px solid #000;
+    }
+    @include mq($from:xs, $until:md){
+      margin-left: 0;
+      margin-top: 10px;
     }
   }
 }
