@@ -871,6 +871,9 @@ img {
       line-height: 24px;
       border-radius: 2px;
       background-color: #ffc952; }
+  .header__adress {
+    line-height: 4;
+    margin: 0; }
   .header__email, .header__phone {
     color: rgba(255, 255, 255, 0.5); }
   .header__item:nth-child(3) {
@@ -1255,7 +1258,8 @@ img {
     vertical-align: top; }
   .promo__item {
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    transition: .5s; }
   .promo__header {
     position: absolute;
     left: 0;
@@ -1281,7 +1285,7 @@ img {
     -ms-transform: translateX(-100%);
         transform: translateX(-100%);
     opacity: 0;
-    transition: 0.3; }
+    transition: .5s; }
   .promo__title {
     position: absolute;
     bottom: 40px;
@@ -1317,7 +1321,10 @@ img {
     padding: 10px 40px 10px 20px;
     text-transform: uppercase;
     position: relative;
-    background-color: #ffc952; }
+    background-color: #ffc952;
+    transition: .3s; }
+    .promo__btn:hover {
+      background-color: #32bfc0; }
 
 .promo__box:hover .promo__contant {
   -ms-transform: translateX(0);
@@ -1536,6 +1543,13 @@ img {
       top: 25px;
       left: 10px;
       color: #fff; }
+  .features .fa-cube:before,
+  .features .fa-mail-forward:before,
+  .features .fa-globe:before {
+    left: 13px; }
+  .features .fa-plane:before {
+    left: 15px;
+    top: 27px; }
   .features__box {
     z-index: 10; }
     .features__box:before {
@@ -3615,6 +3629,11 @@ img {
     flex-wrap: wrap; }
   .header__item {
     display: block; }
+  .header__item:nth-child(3) i {
+    position: static; }
+  .header__item:nth-child(3) p {
+    display: inline-block;
+    margin: 0; }
   .footer__subtitle {
     padding-top: 25px; }
   .footer-copyright {
@@ -3624,8 +3643,12 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
     padding-left: 0; }
+  .nav__logo {
+    width: 75%; }
   .nav__menu {
     width: 100%; }
+  .nav__list {
+    top: 0; }
   .stripe .row {
     -ms-flex-direction: column;
     flex-direction: column; }
@@ -3711,7 +3734,12 @@ img {
     margin-left: 20px;
     display: none;
     padding: 0;
-    background-color: #fff; }
+    background-color: #fff;
+    visibility: visible;
+    position: static;
+    width: 100%;
+    color: #000;
+    opacity: 1; }
   .nav__sub-menu li {
     display: block;
     visibility: visible;
@@ -3723,16 +3751,25 @@ img {
     padding: 0 20px;
     border-bottom: 1px solid #e6e6e6;
     color: #000; }
+  .nav__sub-menu a {
+    color: #000;
+    padding: 0; }
   .search {
     display: none; }
+  .nav__item:hover .nav__sub-menu {
+    opacity: 0;
+    visibility: hidden;
+    display: none; }
+  .promo__contant {
+    padding: 5px; }
+  .promo__text {
+    line-height: 1.2; }
   .page-reviews__column50 {
     width: 100%; } }
-    @media (min-width: 33.75em) and (max-width: 79.99em) {
+    @media (min-width: 48em) and (max-width: 79.99em) {
   .nav__logo {
     width: 50%; } }
     @media (max-width: 33.74em) {
-  .nav__logo {
-    width: 75%; }
   .news-item__date-inner {
     margin-left: 35%;
     margin-bottom: 15px; } }
