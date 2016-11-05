@@ -13,9 +13,9 @@ mixin PageNewsItem(date, mounth, img, title,author,catigories, text)
          +e.A.title #{title}
         +e.meta
           i.fa.fa-user
-          +e.A.author(href="#") #{author}
+          +e.A.author(href="news.html") #{author}
           i.fa.fa-folder-open
-          +e.A.catigories(href="#") #{catigories}
+          +e.A.catigories(href="news.html") #{catigories}
         +e.P.text #{text}
-        +e.A.btn(href="#") Читать далее
+        +e.A.btn(href="news.html") Читать далее
           .fa.fa-chevron-right

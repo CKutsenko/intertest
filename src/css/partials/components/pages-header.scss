@@ -2,6 +2,9 @@
   min-height: 215px;
   background-color: $yellow;
   color: $white;
+  .row {
+    margin: 0;
+  }
 
   &__title {
     font-size: 36px;
@@ -13,7 +16,7 @@
 
 .breadcrumbs {
   background-color: #fff;
-
+  padding: 0 15px;
   .row {
     border-bottom: 2px solid rgba(0, 0, 0, 0.07);
   }

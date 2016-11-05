@@ -1,18 +1,18 @@
 mixin newsItem(img,date, mounth, title,text,author,catigories)
   +b.news
     +e.img
-      +e.A.link(href="#")
+      +e.A.link(href="news.html")
         img(src= "img/" + img alt)
     +e.header
       +e.date-inner
         +e.P.date #{date}
         +e.P.mounth #{mounth}
-      +e.A.title #{title}
+      +e.A.title(href="news.html") #{title}
     +e.contant
       +e.P.text #{text}
     +e.footer
       +e.meta
         i.fa.fa-user
-        +e.A.author(href="#") #{author}
+        +e.A.author(href="news.html") #{author}
         i.fa.fa-folder-open
-        +e.A.catigories(href="#") #{catigories}
+        +e.A.catigories(href="news.html") #{catigories}
