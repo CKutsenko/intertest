@@ -10230,11 +10230,19 @@ jQuery(document).ready(function($){
   $('.nav__hamburger').click(function(e){
     e.preventDefault();
     $('.nav__list').toggle();
+    $('.nav__hamburger').toggleClass('hamburger-active');
   });
 
-  $('.nav__subhamburger').click(function(e){
+  $('.nav__subhamburger-1').click(function(e){
     e.preventDefault();
-    $('.nav__sub-menu').toggle();
+    $('.nav__sub-menu--1').toggle();
+    $('.nav__subhamburger-1').toggleClass('subhamburger-active');
+  });
+
+    $('.nav__subhamburger-2').click(function(e){
+    e.preventDefault();
+    $('.nav__sub-menu--2').toggle();
+    $('.nav__subhamburger-2').toggleClass('subhamburger-active');
   });
 
 
@@ -10243,15 +10251,6 @@ jQuery(document).ready(function($){
    $('.search__form').toggle();
   });
 
-  //     if ($(window).width() < 768) {
-  //   var headerNavItem = $('.header .nav__item');
-  //   $('.nav__hamburger').show();
-  //   $(headerNavItem).hide();
-  //   $('.hamburger').click(function(e){
-  //     e.preventDefault();
-  //     $(headerNavItem).toggle();
-  //   });
-  // }
 
     // var map = new GMaps({
     //     el: '.office__map',
@@ -10268,11 +10267,12 @@ jQuery(document).ready(function($){
     e.preventDefault();
     if($(this).next('.faq__subtext').is(":visible")) {
       $(this).next('.faq__subtext').slideUp();
-      $('.faq__subtitle').addClass('subtitle-close');
+      $(this).addClass('subtitle-close');
     } else {
       $(this).closest('.faq__accordion').find('.faq__subtext').slideUp();
+      $(this).closest('.faq__accordion').find('.faq__subtitle').addClass('subtitle-close');
       $(this).next('.faq__subtext').slideDown();
-      $('.faq__subtitle').removeClass('subtitle-close');
+      $(this).removeClass('subtitle-close');
     }
   });
 
@@ -10343,14 +10343,6 @@ $('.page-about-us__tabs-link a').on('click', function(e){
     slidesToShow: 1
   });
 
-// Set map
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
-  });
-}
 
   /* галерея Promo slider */
   $('.promo-slider').slick({
@@ -10365,29 +10357,6 @@ function initMap() {
      cssEase: 'linear'
   });
 
-
-
-
-  /* Gratitude in the modal window */
-  $('.gratitude__link').click( function(e){
-    e.preventDefault();
-    $('body').css({"overflow":"hidden"});
-    $('.overlay').show();
-    $(this).closest('.gratitude__slide').find('.gratitude__modal').clone().appendTo($('.overlay'))
-    .show()
-    .animate({opacity: 1}, 200);
-  });
-  /* Close the modal window */
-  $('.overlay').click( function(){
-    $('body').css({"overflow":"auto"});
-    $(this).find('.gratitude__modal')
-      .animate({opacity: 0}, 200,
-        function(){
-          $(this).remove();
-          $('.overlay').fadeOut(400);
-        }
-      );
-  });
 
   /* галерея "с нами уже работают" */
   if ($(window).width() <= 480) {
@@ -10422,21 +10391,6 @@ function initMap() {
     });
   }
 
-  /* Side fixed menu showing */
-  $(".side-fixed-menu").animate({right: 0}, 1000)
-
-  $('.side-fixed-menu__link--toggle').click(function(e){
-    e.preventDefault();
-    var sideFixedDetails = $(this).siblings($('.side-fixed-details'));
-    if($(sideFixedDetails).is(":visible")){
-      $(sideFixedDetails).hide();
-    } else if($('.side-fixed-details:not(sideFixedDetails)').is(":visible")) {
-      $('.side-fixed-details').hide();
-      $(sideFixedDetails).show();
-    } else {
-      $(sideFixedDetails).show();
-    }
-  });
 
   /* кнопка "наверх" */
   $('.side-fixed-menu__link--up').click(function(e) {
@@ -10455,31 +10409,7 @@ function initMap() {
     centerPadding: '0',
     variableWidth: true
   });
-  /* Gratitude in the modal window */
-  $('.reviews__link').click( function(e){
-    e.preventDefault();
-    $('body').css({"overflow":"hidden"});
-    $('.overlay').show();
-    $(this).closest('.reviews__slide').find('.reviews__modal').clone().appendTo($('.overlay'))
-    .show()
-    .animate({opacity: 1}, 200);
-  });
-  /* Close the modal window */
-  $('.overlay').click( function(){
-    $('body').css({"overflow":"auto"});
-    $(this).find('.reviews__modal')
-      .animate({opacity: 0}, 200,
-        function(){
-          $(this).remove();
-          $('.overlay').fadeOut(400);
-        }
-      );
-  });
-
-
 });
-
-
 
 },{"./vendor/bower/slick":3,"jquery":1}],3:[function(require,module,exports){
 /*
