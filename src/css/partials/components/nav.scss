@@ -3,12 +3,19 @@ background: -moz-linear-gradient(left, rgba(255,255,255,0) 15%, rgba(255,255,255
 background: -webkit-linear-gradient(left, rgba(255,255,255,0) 15%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right, rgba(255,255,255,0) 15%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
-    position: absolute;
     left: 0;
+    position: absolute;
     right: 0;
     margin-top: -48px;
     box-shadow: none;
     z-index: 99;
+    @include mq($from:xs, $until:xl){
+      background-color: #fff;
+      }
+
+      .container {
+        position: relative;
+      }
 
     .row{
       background-color: $white;
@@ -16,9 +23,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       justify-content: space-between;
       align-items: center;
       position: relative;
-      @include mq($from:xs, $until:md){
-      flex-direction: column;
-    }
+    @include mq($from:xs, $until:xl){
+      border-left: none;
+      }
   }
 
 
@@ -26,8 +33,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       width: 30%;
       margin: 25px 0;
       padding: 0 25px;
-    @include mq($from:xs, $until:md){
-      width: 100%;
+    @include mq($from:sm, $until:xl){
+      width: 50%;
+      }
+    @include mq($from:xs, $until:sm){
+      width: 75%;
       }
     }
 
@@ -45,6 +55,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       cursor: pointer;
       padding-bottom: 40px;
       padding-top: 40px;
+      @include mq($from:xs, $until:xl) {
+        display: block;
+        width: 100%;
+        color: #333;
+        line-height: 56px;
+        margin-right: 56px;
+        padding: 0 20px;
+        border-bottom: 1px solid #e6e6e6;
+      }
 
       a {
         color: $black;
@@ -55,6 +74,64 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       }
     }
 
+
+  &__hamburger{
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: $blue;
+    i{
+      color: $white;
+    }
+    @include mq($from:xs, $until:xl){
+      display: block;
+    }
+  }
+
+  &__subhamburger {
+    position: absolute;
+    display: none;
+    width: 56px;
+    height: 56px;
+    border-left: 1px solid #e6e6e6;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    cursor: pointer;
+    @include mq($from:xs, $until:xl){
+      display: block;
+    }
+    &:after {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    top: 50%;
+    margin-top: -1px;
+    }
+    &:before {
+    content: "";
+    width: 2px;
+    height: 14px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 50%;
+    margin-top: -7px;
+    }
+  }
+
     &__list {
       display: -webkit-flex;
       display: -moz-flex;
@@ -64,13 +141,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       justify-content: space-between;
       padding-left: 0;
       margin: 0;
-      @include mq($from:xs, $until:md){
-      flex-direction: column;
+      @include mq($from:xs, $until:xl){
+      border-top: 1px solid #e6e6e6;
+      display: none;
+      position: absolute;
+      top: 110px;
+      width: 100%;
+      left: 0;
+      background-color: #fff;
+      z-index: 1000;
     }
   }
 
     &__sub-menu {
-      display: none;
     position: absolute;
     width: 250px;
     padding: 0;
@@ -82,9 +165,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     background-color: $blue;
     list-style-type: none;
     transition: 0.5s;
+    @include mq($from:xs, $until:xl){
+      display: none;
+      border-top: 1px solid #e6e6e6;
+      margin-left: 20px;
+      display: none;
+      padding: 0;
+      background-color: #fff;
+    }
 
     li {
       transition: 0.5s;
+      @include mq($from:xs, $until:xl){
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        color: #333;
+        line-height: 56px;
+        margin-right: 56px;
+        padding: 0 20px;
+        border-bottom: 1px solid #e6e6e6;
+        color: #000;
+      }
     }
 
     a{
@@ -98,12 +201,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
     &:hover {
       background-color: #000;
+      color: #fff;
       }
-    }
+     }
     }
   }
 
 .search {
+  @include mq($from:xs, $until:xl){
+    display: none;
+  }
 
   &__form {
     position: absolute;

@@ -4,15 +4,31 @@ window.slick =              require('./vendor/bower/slick');
 jQuery(document).ready(function($){
 
   /* Hamburger */
-  $('.hamburger').click(function(e){
+  $('.nav__hamburger').click(function(e){
     e.preventDefault();
-    $('.nav__list-wrapper').toggle();
+    $('.nav__list').toggle();
   });
+
+  $('.nav__subhamburger').click(function(e){
+    e.preventDefault();
+    $('.nav__sub-menu').toggle();
+  });
+
 
     $('.search__icon').click(function(e){
    e.preventDefault();
    $('.search__form').toggle();
   });
+
+  //     if ($(window).width() < 768) {
+  //   var headerNavItem = $('.header .nav__item');
+  //   $('.nav__hamburger').show();
+  //   $(headerNavItem).hide();
+  //   $('.hamburger').click(function(e){
+  //     e.preventDefault();
+  //     $(headerNavItem).toggle();
+  //   });
+  // }
 
     // var map = new GMaps({
     //     el: '.office__map',

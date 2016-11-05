@@ -8,11 +8,16 @@ include ../abstracts/bemto/bemto.pug
         a(href="index.html")
           img(src="img/logo.png")
       +e.menu
+        +e.hamburger
+          +b.A.hamburger(href="#")
+            i.fa.fa-bars
         +e.UL.list
           +e.LI.item
             a(href="index.html") Главная
           +e.LI.item
             +e.A.link(href="about-us.html") Компания
+            +e.subhamburger
+               +b.A.subhamburger(href="#")
             +e.UL.sub-menu
               li
                 a(href="about-us.html") О компании
@@ -28,6 +33,8 @@ include ../abstracts/bemto/bemto.pug
                 a(href="reviews.html")  Отзывы
           +e.LI.item
             +e.A.link(href="services.html") Услуги
+            +e.subhamburger
+               +b.A.subhamburger(href="#")
             +e.UL.sub-menu
               li
                 a(href="page.html")  Сертификация
