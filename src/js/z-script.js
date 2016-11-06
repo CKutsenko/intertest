@@ -53,25 +53,6 @@ jQuery(document).ready(function($){
     }
   });
 
-  var link_href;
-$('.form-inner__tabs-link a').on('click', function(e){
-  e.preventDefault();
-
-  $(this)
-    .closest('.form-inner__tabs-list')
-    .find('.form-inner__tabs-link.active')
-    .removeClass('active');
-  $(this)
-   .closest('.form-inner__tabs-link')
-   .addClass('active');
-
-  $(this)
-   .closest('.form-inner__tabs')
-   .find('.form-inner__tab-item.active')
-   .removeClass('active');
-  link_href = $(this).attr('href');
-  $(link_href).addClass('active');
-});
 
 $('.page-about-us__tabs-link a').on('click', function(e){
   e.preventDefault();
