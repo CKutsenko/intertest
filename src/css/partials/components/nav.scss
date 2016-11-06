@@ -27,7 +27,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       border-left: none;
       }
   }
-
+      &__link--active {
+       &:after {
+        background-color: $blue;
+        position: absolute;
+        bottom: 0;
+       left: 0px;
+       right: 0;
+       height: 5px;
+       content: "";
+    width: 100%;
+    @include mq($from:xs, $until:xl){
+      display: none;
+      }
+       }
+      }
 
     &__logo {
       width: 30%;
@@ -64,6 +78,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         padding: 0 20px;
         border-bottom: 1px solid #e6e6e6;
       }
+
 
       a {
         color: $black;
@@ -191,6 +206,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
     li {
       transition: 0.5s;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       @include mq($from:xs, $until:xl){
         display: block;
         visibility: visible;
@@ -236,9 +252,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 
   &__form {
     position: absolute;
-    width: 280px;
+    width: 300px;
     display: none;
-    top: 100px;
+    top: 102px;
     right: -35px;
   }
   &__input {

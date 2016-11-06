@@ -35,11 +35,9 @@
   position: absolute;
   width: 45px;
   height: 45px;
-  top: -90px;
-  right: 58px;
   border: 2px solid #cce9ed;
   font-size: 0;
-  top: -17%;
+  top: -14%;
   background-color: transparent;
   outline: none;
   transition: 0.5s;
@@ -61,14 +59,14 @@
 }
 
 .slick-next {
-  right: 7%;
+  right: 60px;
       @include mq($from:xs, $until:md){
       right: 25%;
     }
 }
 
 .slick-prev {
-  left: 93%;
+  right: 15px;
   border-left: none;
     &:after {
     transform: rotate(-180deg);
@@ -88,7 +86,7 @@
     border: 2px solid #cce9ed;
     position: relative;
     margin-bottom: 18px;
-    margin: 0 15px;
+    margin-right: 15px;
     z-index: 100;
     &:after {
           content: "";
@@ -106,5 +104,12 @@ border-left: 2px solid #cce9ed;
     transform: skewY(-45deg);
     z-index: 2;
     }
+  }
+
+  &__text {
+    color: #666e70;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: $font-family;
   }
 }
