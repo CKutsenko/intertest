@@ -1316,11 +1316,16 @@ img {
     position: relative;
     box-sizing: border-box;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    transition: .5s; }
+    transition: .5s;
+    cursor: pointer; }
   .promo__img {
-    height: auto;
+    height: 250px;
     max-width: 100%;
     vertical-align: top; }
+    .promo__img img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%; }
   .promo__item {
     overflow: hidden;
     position: relative;
@@ -1379,10 +1384,12 @@ img {
     font-size: 15px;
     line-height: 1.8;
     margin-top: 0;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    padding: 10px; }
   .promo__btn {
     color: #fff;
     font-weight: bold;
+    margin-left: 10px;
     padding: 10px 40px 10px 20px;
     text-transform: uppercase;
     position: relative;
@@ -1844,13 +1851,14 @@ img {
   .form-inner__tabs {
     width: 66.6%; }
   .form-inner__tabs-list {
-    text-align: left;
+    text-align: center;
     margin: 30px 0;
     padding: 0 5px;
     list-style: none;
     background: #21242b; }
   .form-inner__tabs-link {
-    display: inline-block; }
+    display: inline-block;
+    cursor: default; }
     .form-inner__tabs-link a {
       display: inline-block;
       padding: 15px 20px;
@@ -1917,7 +1925,7 @@ img {
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
       border-radius: 2px;
       outline: none; }
-  .form--application .form-group:nth-child(7) {
+  .form--application .form-group:nth-child(5) {
     width: 100%; }
   .form--application .btn {
     display: inline-block;
@@ -1937,103 +1945,6 @@ img {
     background-color: #32bfc0;
     transition: .5s; }
     .form--application .btn:hover {
-      background-color: #000; }
-
-.form--questionheader {
-  margin-top: 20px; }
-  .form--questionheader h3 {
-    display: none; }
-  .form--questionheader p {
-    width: 80%;
-    padding-left: 10%;
-    color: #666e70;
-    line-height: 1.8; }
-  .form--questionheader .form-group {
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 7px; }
-    .form--questionheader .form-group .form__input,
-    .form--questionheader .form-group .form__country-list,
-    .form--questionheader .form-group .form__region-list,
-    .form--questionheader .form-group .form__textarea {
-      width: 100%;
-      background: rgba(0, 0, 0, 0.02);
-      padding: 0;
-      height: 45px;
-      max-width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
-      border-radius: 2px;
-      outline: none; }
-  .form--questionheader .form-group:nth-child(7) {
-    width: 100%; }
-  .form--questionheader .btn {
-    display: inline-block;
-    outline: none;
-    width: 100%;
-    border: none;
-    color: #fff;
-    background-image: none;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 30px;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    background-color: #32bfc0;
-    transition: .5s; }
-    .form--questionheader .btn:hover {
-      background-color: #000; }
-
-.form--call {
-  margin-top: 20px; }
-  .form--call h3 {
-    display: none; }
-  .form--call p {
-    width: 80%;
-    padding-left: 10%;
-    color: #666e70;
-    line-height: 1.8; }
-  .form--call .form-group {
-    width: 50%;
-    padding: 10px;
-    margin-bottom: 7px; }
-    .form--call .form-group .form__input,
-    .form--call .form-group .form__country-list,
-    .form--call .form-group .form__region-list {
-      width: 100%;
-      background: rgba(0, 0, 0, 0.02);
-      padding: 0;
-      height: 45px;
-      max-width: 100%;
-      padding: 10px;
-      box-sizing: border-box;
-      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) inset;
-      border-radius: 2px;
-      outline: none; }
-  .form--call .form-group:nth-child(5) {
-    width: 100%; }
-  .form--call .btn {
-    display: inline-block;
-    outline: none;
-    width: 100%;
-    border: none;
-    color: #fff;
-    background-image: none;
-    height: 45px;
-    line-height: 45px;
-    padding: 0 30px;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    background-color: #32bfc0;
-    transition: .5s; }
-    .form--call .btn:hover {
       background-color: #000; }
 
 .has-success input, .has-success textarea {
@@ -3022,6 +2933,13 @@ img {
     font-size: 15px;
     line-height: 1.8;
     font-family: "Open Sans", Arial, sans-serif; }
+  .page__img {
+    width: 70%;
+    height: 400px; }
+    .page__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
   .page__subtitle {
     margin: 30px 0 40px 0;
     color: #21242b;
@@ -3029,6 +2947,29 @@ img {
     font-family: 'Roboto';
     font-size: 30px;
     position: relative; }
+  .page h3 {
+    font-size: 22px; }
+  .page h4 {
+    font-size: 20px; }
+  .page h5 {
+    font-size: 18px; }
+  .page__blockqoute {
+    color: #666e70;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding-left: 40px;
+    position: relative; }
+    .page__blockqoute:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 3px;
+      background-color: #32bfc0;
+      left: 0; }
+  .page cite {
+    float: right;
+    padding-right: 50px; }
 
 .page-404 {
   background-color: #fff;
@@ -4020,10 +3961,6 @@ img {
     margin-top: 10px; }
   .form--application .form-group {
     width: 100%; }
-  .form--questionheader .form-group {
-    width: 100%; }
-  .form--call .form-group {
-    width: 100%; }
   .page-news {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%; }
@@ -4135,7 +4072,7 @@ img {
   .promo__contant {
     padding: 5px; }
   .promo__text {
-    line-height: 1.2; }
+    line-height: 1.8; }
   .page-reviews__column50 {
     width: 100%; } }
   @media (min-width: 48em) and (max-width: 79.99em) {
