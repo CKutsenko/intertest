@@ -43,13 +43,13 @@ include ../abstracts/bemto/bemto.pug
               li
                 a(href="page.html")  Роспотребнадзор
           +e.LI.item
-            a(href="news.html") Новости
+            +e.A.link(href="news.html") Новости
           +e.LI.item
-            a(href="contact.html") Контакты
+            +e.A.link(href="contact.html") Контакты
           +e.LI.item
             +b.search
               +e.FORM.form
-                +e.INPUT.input(type="text" name="Поиск" placeholder="поиск")
+                +e.INPUT.input(type="text" name="Поиск" placeholder="Поиск...")
                 +e.A.arrow(href="#")
               +e.A.icon(href="#")
                 i.fa.fa-search

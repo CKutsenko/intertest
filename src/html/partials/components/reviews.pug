@@ -4,8 +4,9 @@ include ../abstracts/bemto/bemto.pug
 //Reviews
 +b.SECTION.reviews-block
   .container
-    +e.H2.title Что клиенты говорят
-      span о нас.
+    +e.title-wrapper
+      +e.H2.title Что клиенты говорят
+        span о нас.
     +e.wrapper
       +reviewsItem("star.png","SaNora Anderson","Canava is great to work with. They have many locations, competitive rates, and their staff is excellent will go above and beyond for their partners. I look forward to working with them in the future.")
       +reviewsItem("star.png","SaNora Anderson","Thank you for delivering the chairs to us so quickly. Your delivery guys were most helpful and courteous. You have been a pleasure to deal with and we will not hesitate to use your services again or recommend you.")

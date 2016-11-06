@@ -1,3 +1,5 @@
+//Navigation
+
 .nav {
 background: -moz-linear-gradient(left, rgba(255,255,255,0) 15%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left, rgba(255,255,255,0) 15%,rgba(255,255,255,1) 75%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -6,7 +8,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     left: 0;
     position: absolute;
     right: 0;
-    margin-top: -48px;
+    margin-top: -42px;
     box-shadow: none;
     z-index: 99;
     @include mq($from:xs, $until:xl){
@@ -28,6 +30,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
       }
   }
       &__link--active {
+        color: $blue;
        &:after {
         background-color: $blue;
         position: absolute;
@@ -78,16 +81,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
         padding: 0 20px;
         border-bottom: 1px solid #e6e6e6;
       }
+    }
 
 
-      a {
+     &__link {
         color: $black;
         transition: 0.2s;
         &:hover {
           color: $blue;
         }
       }
-    }
 
 
   &__hamburger{
@@ -265,8 +268,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
     height: 45px;
     width: 90%;
     padding: 10px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
-    border-radius: 2px;
+    border: none;
     outline: none;
   }
 
@@ -287,6 +289,9 @@ background-image: url(../img/arrow.svg);
     &:hover {
       opacity: .8;
     }
+  }
+  &__icon {
+    color: #000;
   }
 }
 
@@ -337,4 +342,8 @@ text-indent: -9999px;
   &:before {
     display: none;
   }
+}
+
+.nav__link .nav__link--active {
+  color: $blue;
 }
