@@ -17,7 +17,7 @@
 
     &:after {
     content: "";
-    position: absolute;
+    position: relative;
     display: inline-block;
     background: url(../img/bg-heading.svg);
     min-width: 40%;

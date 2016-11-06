@@ -1,5 +1,5 @@
-window.$ = window.jQuery =  require('jquery');
-window.slick =              require('./vendor/bower/slick');
+// window.$ = window.jQuery =  require('jquery');
+// window.slick =              require('./vendor/bower/slick');
 
 jQuery(document).ready(function($){
 
@@ -186,4 +186,28 @@ $('.page-about-us__tabs-link a').on('click', function(e){
     centerPadding: '0',
     variableWidth: true
   });
+    / Map /
+    var map = new GMaps({
+        el: '.map',
+        lat: 56.8378081,
+        lng: 60.5950772,
+        scrollwheel: false
+    });
+    // map.addMarker({
+    //     lat: 56.8378081,
+    //     lng: 60.5950772
+    // });
+    map.drawOverlay({
+        lat: 56.8378081,
+        lng: 60.5950772,
+        content: '<img src="img/map.png">'
 });
+  $(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 100) {
+        $('.nav').addClass('fixed');
+    } else {
+        $('.nav').removeClass('fixed');
+    }
+});
+});
+

@@ -1,0 +1,188 @@
+//Single news
+
+.single-news {
+  padding-top: 35px;
+  flex: 0 0 70%;
+  position: relative;
+    min-height: 1px;
+    padding-right: .625rem;
+    padding-left: .625rem;
+    overflow: hidden;
+  @include mq($from:xs, $until:md){
+    flex: 0 0 100%;
+  }
+ .col-sm-10 {
+  padding-bottom: 60px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  }
+
+  &__date-inner {
+    text-align: center;
+    vertical-align: middle;
+    background-color: $blue;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    max-width: 70px;
+    max-height: 70px;
+    position: relative;
+  @include mq($from:xs, $until:sm){
+    margin-left: 35%;
+    margin-bottom: 15px;
+  }
+    &:after {
+    border-top: 8px solid;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    vertical-align: middle;
+    left: 50%;
+    margin-left: -8px;
+    top: 100%;
+    border-top-color: $blue;
+    }
+ }
+  &__date {
+    display: block;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    line-height: .8;
+    margin: 0;
+    padding-bottom: 7px;
+  }
+  &__mounth {
+    display: block;
+    line-height: 1;
+    margin: 5px;
+    padding-top: 5px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+  }
+
+  &__img {
+    max-width: 800px;
+    max-height: 533px;
+    transition: 0.3s;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    padding: 20px 0;
+    display: block;
+    font-weight: bold;
+    font-family: $font-family-roboto;
+  }
+
+  &__text {
+    color: #666e70;
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: $font-family;
+    padding: 15px 0;
+    &--first {
+      font-weight: 700;
+    }
+  }
+
+  i {
+    color: $blue;
+  }
+
+  &__author {
+    display: inline-block;
+    padding-left: 5px;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      height: 12px;
+      width: 1px;
+      top: 5px;
+      right: -10px;
+      background-color: #ccc;
+    }
+  }
+
+  &__meta {
+    padding-top: 20px;
+    a {
+      color: #ccc;
+      margin-left: 10px;
+      &:hover {
+        color: #333;
+      }
+    }
+    .fa-folder-open {
+      margin-left: 17px;
+    }
+  }
+  &__tag-wrapper {
+    padding-top: 25px;
+  }
+  &__tag {
+    padding: 7px 20px;
+    margin: 0 5px 5px 0;
+    float: left;
+    position: relative;
+    color: $white;
+    transition: .3s;
+    background-color: $black;
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+  &__btn-wrapper {
+    padding-top: 60px;
+  }
+  &__previous {
+    display: block;
+    background-color: #f2f4f6;
+    width: 70%;
+    padding: 1px 0 1px 60px;
+    position: relative;
+    transition: .3s;
+    &:hover {
+      transition: .3s;
+      &:before {
+        background-color: #000;
+      }
+    }
+    &:before {
+      font-family: "FontAwesome";
+    font-size: 14px;
+    font-weight: normal;
+    content: "\f053";
+    position: absolute;
+    color: #fff;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    margin-top: -23px;
+    background-color: $blue;
+    }
+  }
+  &__btn-title {
+    color: $blue;
+    font-weight: bold;
+    font-family: $font-family-roboto;
+    margin-bottom: 7px;
+  }
+  &__btn-text {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+}

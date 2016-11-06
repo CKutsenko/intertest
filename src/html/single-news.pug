@@ -1,0 +1,19 @@
+extends partials/templates/template.pug
+
+block content
+  +b.pages-header
+    .container
+      .row
+        +e.H1.title Новость 1
+  +b.breadcrumbs
+    .container
+      .row
+        +e.wrapper
+          i.fa.fa-map-marker
+          +e.SPAN.text Вы здесь:
+          +e.A.link(href="index.html") Главная
+          +e.A.link(href="news.html") 2016
+          +e.A.link(href="news.html") март
+          +e.A.link(href="news.html") 25
+          +e.SPAN.this Новость 1
+  include partials/components/single-news.pug

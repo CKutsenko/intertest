@@ -91,7 +91,7 @@ gulp.task('pug', function() {
     .pipe(pug())
     .pipe(prettify({
       indent_size: 2
-    }))    
+    }))
     .pipe(gulp.dest(path.build.html))
     .pipe(reload({stream: true}));
 })
@@ -109,7 +109,7 @@ gulp.task('sass', function () {
       autoprefixer({browsers: ['last 3 version']}),
       mqpacker
     ]))
-    .pipe(gulp.dest(path.build.css))    
+    .pipe(gulp.dest(path.build.css))
     .pipe(cleancss())
 //    .pipe(sourcemaps.write())
     .pipe(rename('style.min.css'))
@@ -118,35 +118,35 @@ gulp.task('sass', function () {
 });
 
 // Compilation js v1
-gulp.task('js', function() {
-  var jsFiles = glob.sync(path.src.browserify);
-  return browserify({
-      entries: jsFiles,
-      extensions: ['.jsx']
-    })
-    .bundle()  
-    .pipe(plumber(function(error) {
-        gutil.log(gutil.colors.red(error.message));
-        this.emit('end');
-    }))
-    .pipe(source('script.js'))
-    .pipe(gulp.dest(path.build.js))
-    .pipe(buffer())
-    .pipe(uglify())
-    .pipe(rename('script.min.js'))    
-    .pipe(gulp.dest(path.build.js))
-    .pipe(reload({stream: true}));
-});
-
-// Compilation js v2 
-// (If jquery is used from 3rd party, and you need to exclude it from script.min.js, you should manually put all required .js files into path.src.js directory)
 // gulp.task('js', function() {
-//   return gulp.src(path.src.js)
-//     .pipe(concat('script.min.js'))
+//   var jsFiles = glob.sync(path.src.browserify);
+//   return browserify({
+//       entries: jsFiles,
+//       extensions: ['.jsx']
+//     })
+//     .bundle()
+//     .pipe(plumber(function(error) {
+//         gutil.log(gutil.colors.red(error.message));
+//         this.emit('end');
+//     }))
+//     .pipe(source('script.js'))
+//     .pipe(gulp.dest(path.build.js))
+//     .pipe(buffer())
 //     .pipe(uglify())
+//     .pipe(rename('script.min.js'))
 //     .pipe(gulp.dest(path.build.js))
 //     .pipe(reload({stream: true}));
 // });
+
+// Compilation js v2
+// (If jquery is used from 3rd party, and you need to exclude it from script.min.js, you should manually put all required .js files into path.src.js directory)
+gulp.task('js', function() {
+  return gulp.src(path.src.js)
+    .pipe(concat('script.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(path.build.js))
+    .pipe(reload({stream: true}));
+});
 
 // Optimization images
 gulp.task('img', function () {
@@ -191,7 +191,7 @@ gulp.task('clean', function () {
 // Overall build
 gulp.task('build', function (cb) {
   runSequence('clean', ['pug', 'png-sprites', 'img', 'sass', 'js', 'fonts'], cb);
-});     
+});
 
 
 //Server config

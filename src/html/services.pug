@@ -1,0 +1,16 @@
+extends partials/templates/template.pug
+
+block content
+  +b.pages-header
+    .container
+      .row
+        +e.H1.title Услуги
+  +b.breadcrumbs
+    .container
+      .row
+        +e.wrapper
+          i.fa.fa-map-marker
+          +e.SPAN.text Вы здесь:
+          +e.A.link(href="index.html") Главная
+          +e.SPAN.this Услуги
+  include partials/components/services.pug

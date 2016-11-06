@@ -3,23 +3,33 @@
 .features {
   background-color: #fff;
   padding: 60px 0;
-
+&__title-wrapper {
+    position: relative;
+    z-index: 1;
+    padding-right: 20px;
+    background-color: #fff;
+    color: #000;
+    span {
+     color: $blue;
+    }
+  }
 
   &__title {
     font-size: $font-size-h2;
     font-weight: bold;
+    position: relative;
     padding-bottom: 20px;
-    span {
-      color: $blue;
-    }
+    background-color: #fff;
+
 
     &:after {
     content: "";
-    position: relative;
+    position: absolute;
     display: inline-block;
     background: url(../img/bg-heading.svg);
-    min-width: 40%;
-    margin-left: 25px;
+    width: 100%;
+    left: 0;
+    top: 16px;
     height: 20px;
     }
   }

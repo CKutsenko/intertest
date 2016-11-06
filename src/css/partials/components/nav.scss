@@ -347,3 +347,10 @@ text-indent: -9999px;
 .nav__link .nav__link--active {
   color: $blue;
 }
+
+.fixed {
+  position: fixed;
+  top: 42px;
+  width: 100%;
+  z-index: 1000;
+}

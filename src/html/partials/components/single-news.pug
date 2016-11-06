@@ -1,0 +1,68 @@
+include ../abstracts/bemto/bemto.pug
+
++b.white-bgr
+  .container
+    .row
+      +b.single-news
+        .row
+          .col-xs-12.col-sm-2
+            +e.date-inner
+              +e.P.mounth Мар
+              +e.P.date 25
+          .col-xs-12.col-sm-10
+            +e.img
+              +e.A.link(href="single-news.html")
+                img(src= "img/6.jpg" alt="6" )
+            +e.meta
+              i.fa.fa-user
+              +e.A.author(href="single-news.html") Ekaterina
+              i.fa.fa-folder-open
+              +e.A.catigories(href="single-news.html") Warehouse
+            +e.P.text--first It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12% more productive than their counterparts. It underlines staff morale and wellbeing is not just an HR goal: it’s fundamental to business performance levels.
+            +e.P.text The logistics sector employs millions of workers around the world and must actively manage morale to ensure it attracts and retains the best employees. The warehouse is a key focus here, and traditionally may not be seen as the happiest of working environments. But warehouse managers do now have the tools to keep workers motivated, in both what they are doing and how they are doing it, without even physically being there.
+            +e.text--quote The concept of talking to a machine may not sound like a great motivator, but voice technology has been found to have positive effects on warehouse workers’ worklife balance and overall wellbeing. How? Through providing clear guidance and direction over the course of the shift, and enabling greater efficiency. Through voice-directed work, warehouse staff use small belt-worn portable devices and headsets, leaving them hands-free and eyes-free, focused on the task at hand.
+            +e.P.text The logistics sector employs millions of workers around the world and must actively manage morale to ensure it attracts and retains the best employees. The warehouse is a key focus here, and traditionally may not be seen as the happiest of working environments. But warehouse managers do now have the tools to keep workers motivated, in both what they are doing and how they are doing it, without even physically being there.
+            +e.P.text The logistics sector employs millions of workers around the world and must actively manage morale to ensure it attracts and retains the best employees. The warehouse is a key focus here, and traditionally may not be seen as the happiest of working environments. But warehouse managers do now have the tools to keep workers motivated, in both what they are doing and how they are doing it, without even physically being there.
+            +e.tag-wrapper
+              +e.A.tag(href="single-news.html") Tip
+              +e.A.tag(href="single-news.html") Trick
+              +e.A.tag(href="single-news.html") Warehouse
+            +e.btn-wrapper
+              +e.A.previous(href="single-news.html")
+                +e.P.btn-title Previous Post
+                +e.P.btn-text Seafield logistics goes into administration
+
+      +b.ASIDE.news-meta
+        +e.wrapper
+          +e.H2.title Последние новости
+          +e.A.sub-title(href="news.html") Новость 1
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="news.html") Seafield logistics goes into administration
+          +e.P.time 25.03.2016
+          +e.A.sub-title(href="news.html") Transport managers grow scarce
+          +e.P.time 25.03.2016
+        +e.wrapper--pd
+          +e.H2.title Рубрики
+          +e.A.heading(href="news.html") Jobs
+          +e.A.heading(href="news.html") Logistics
+          +e.A.heading(href="news.html") Tip & Trick
+          +e.A.heading(href="news.html") Transport
+          +e.A.heading(href="news.html") Warehouse
+        +e.wrapper--blue
+          +e.H3.question How can we help you?
+          +e.P.text Our customer service standards provide information on how we will handle your enquiry. There is also compliments and complaints information to help you when you lodge feedback with us.
+          +e.A.btn(href="#") contact us
+            .fa.fa-chevron-right
+        +e.wrapper--pd
+          +e.H2.title Теги
+          +e.A.tag(href="news.html") Committee
+          +e.A.tag(href="news.html") Grow
+          +e.A.tag(href="news.html") Huge
+          +e.A.tag(href="news.html") Jobs
+          +e.A.tag(href="news.html") Logistic
+          +e.A.tag(href="news.html") Manager
+          +e.A.tag(href="news.html") Recruit
+          +e.A.tag(href="news.html") Tip
+          +e.A.tag(href="news.html") Transport
+          +e.A.tag(href="news.html") Trick
+          +e.A.tag(href="news.html") Warehouse
