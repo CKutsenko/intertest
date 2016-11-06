@@ -161,15 +161,15 @@
                 </ul>
               </li>
               <li class="nav__item">
-                <a href="news.html">Новости</a>
+                <a class="nav__link" href="news.html">Новости</a>
               </li>
               <li class="nav__item">
-                <a href="contact.html">Контакты</a>
+                <a class="nav__link" href="contact.html">Контакты</a>
               </li>
               <li class="nav__item">
                 <div class="search">
                   <form class="search__form">
-                    <input class="search__input" type="text" name="Поиск" placeholder="поиск" />
+                    <input class="search__input" type="text" name="Поиск" placeholder="Поиск..." />
                     <a class="search__arrow" href="#"></a>
                   </form>
                   <a class="search__icon" href="#">
@@ -237,6 +237,7 @@
           </div>
         </div>
       </div>
+      <!--Stripe-->
       <div class="stripe stripe stripe--blue">
         <div class="container">
           <div class="row">
@@ -515,6 +516,7 @@
           </div>
         </div>
       </section>
+      <!--Stripe-->
       <div class="stripe stripe stripe--yellow">
         <div class="container">
           <div class="row">
@@ -525,11 +527,14 @@
           </div>
         </div>
       </div>
+      <!--News-->
       <section class="news-block">
         <div class="container">
-          <h2 class="news-block__title">Latest
-            <span>news.</span>
-          </h2>
+          <div class="news-block__title-wrapper">
+            <h2 class="news-block__title">Latest
+              <span>news.</span>
+            </h2>
+          </div>
           <div class="row">
             <div class="col-xs-12 col-md-6 col-xl-4">
               <div class="news">
@@ -618,9 +623,11 @@
       <!--Reviews-->
       <section class="reviews-block">
         <div class="container">
-          <h2 class="reviews-block__title">Что клиенты говорят
-            <span>о нас.</span>
-          </h2>
+          <div class="reviews-block__title-wrapper">
+            <h2 class="reviews-block__title">Что клиенты говорят
+              <span>о нас.</span>
+            </h2>
+          </div>
           <div class="reviews-block__wrapper">
             <div class="reviews">
               <div class="reviews__contant">
