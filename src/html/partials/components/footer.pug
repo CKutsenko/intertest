@@ -37,13 +37,13 @@ include ../abstracts/bemto/bemto.pug
           .col-xs-6
             +e.A.link(href="about-us.html") Компания
             +e.A.link(href="news.html") Новости
-      .col-xs-12.col-md-4.col-lg-3
+      .col-xs-12.col-md-4.col-lg-3(itemscope itemtype="http://schema.org/Organization")
         +e.H3.subtitle Контакты
-        +e.P.adress Улица Лермонтова, Москва, 154234
-        +e.A.phone(href="tel:89116783455") +7 921 234-23-23
-        +e.A.mail(href="mailto:support@gmal.com") manager@gmail.com
-        +e.A.phone(href="tel:89116783455") +7 911 678-34-34
-        +e.A.mail(href="mailto:support@gmal.com") support@gmal.com
+        +e.P.adress(itemprop="address") Улица Лермонтова, Москва, 154234
+        +e.A.phone(href="tel:89116783455" itemprop="telephone") +7 921 234-23-23
+        +e.A.mail(href="mailto:support@gmal.com" itemprop="email") manager@gmail.com
+        +e.A.phone(href="tel:89116783455" itemprop="telephone") +7 911 678-34-34
+        +e.A.mail(href="mailto:support@gmal.com" itemprop="email") support@gmal.com
   .container
     +b.footer-copyright
       +e.inner
@@ -53,19 +53,19 @@ include ../abstracts/bemto/bemto.pug
         +e.socials
         +e.UL.list
           +e.LI.socials-item
-            a(href="twitter.com" target="_blank")
+            a(href="http://twitter.com" target="_blank")
               i.fa.fa-twitter
           +e.LI.socials-item
-            a(href="facbook.com" target="_blank")
+            a(href="http://facbook.com" target="_blank")
               i.fa.fa-facebook-official
           +e.LI.socials-item
-            a(href="instagram.com" target="_blank")
+            a(href="http://instagram.com" target="_blank")
               i.fa.fa-instagram
           +e.LI.socials-item
-            a(href="ru.linkedin.com" target="_blank")
+            a(href="http://ru.linkedin.com" target="_blank")
               i.fa.fa-linkedin
           +e.LI.socials-item
-            a(href="vk.com" target="_blank")
+            a(href="http://vk.com" target="_blank")
               i.fa.fa-vk
 
 

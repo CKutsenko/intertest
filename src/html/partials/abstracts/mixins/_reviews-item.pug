@@ -1,8 +1,8 @@
 mixin reviewsItem(img,name,text)
   +b.reviews
     +e.contant
-      +e.box
-        +e.img
+      +e.box(itemscope itemtype="http://schema.org/Review")
+        +e.img(itemprop="reviewRating")
           img(src= "img/" + img alt)
-        +e.H3.name #{name}
-        +e.P.text #{text}
+        +e.H3.name(itemprop="author") #{name}
+        +e.P.text(itemprop="reviewBody") #{text}

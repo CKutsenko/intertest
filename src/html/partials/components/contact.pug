@@ -3,7 +3,7 @@ include ../abstracts/bemto/bemto.pug
 
 //Contacts
 
-+b.SECTION.contact
++b.SECTION.contact(itemscope itemtype="http://schema.org/Organization")
   .container
     .row
       .col-xs-12.col-sm-6.col-lg-3
@@ -100,7 +100,7 @@ include ../abstracts/bemto/bemto.pug
       +e.H2.time Opening
         span hours
       +e.P.text Find out opening hours and information for Canava Transport. Thank you!
-      +e.UL.list
+      +e.UL.list(itemprop="openingHoursSpecification")
         +e.LI.item Monday:
           span 08:00 a.m – 06:00 p.m
         +e.LI.item  Tuesday:

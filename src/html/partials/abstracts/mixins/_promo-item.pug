@@ -1,11 +1,11 @@
 mixin promoItem(img, title, subtitle, text)
   +e.box
-    +e.item
+    +e.item(itemscope itemtype="http://schema.org/Service")
       +e.img
-        img(src= "img/" + img alt)
+        img(itemprop="logo" src= "img/" + img alt)
       +e.header
-        +e.P.title #{title}
-        +e.P.subtitle #{subtitle}
+        +e.P.title(itemprop="serviceType") #{title}
+        +e.P.subtitle(itemprop="offers") #{subtitle}
       +e.contant
         +e.P.text #{text}
         +e.A.btn(href="page.html") Continue

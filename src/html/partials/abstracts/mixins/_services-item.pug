@@ -1,12 +1,12 @@
 mixin servicesItem(img,title,text)
-  +e.wrapper
+  +e.wrapper(itemscope itemtype="http://schema.org/Service")
     .row
       .col-xs-12.col-sm-6
         +e.img
-          img(src= "img/" + img alt)
+          img(itemprop="logo" src= "img/" + img alt)
       .col-xs-12.col-sm-6
         +e.inner
-          +e.H3.name #{title}
-          +e.P.text #{text}
+          +e.H3.name(itemprop="serviceType") #{title}
+          +e.P.text(itemprop="offers") #{text}
           +e.A.btn(href="page.html") Читать далее
             i.fa.fa-chevron-right

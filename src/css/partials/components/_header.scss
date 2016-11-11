@@ -76,7 +76,7 @@
 
     i {
       position: absolute;
-      top: 12px;
+      top: 16px;
       left: -13px;
     @include mq($from:xs, $until:md){
       position: static;

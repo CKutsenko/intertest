@@ -2,12 +2,12 @@ include ../abstracts/mixins/_services-item.pug
 include ../abstracts/bemto/bemto.pug
 
 //Page
-+b.ARTICLE.page
++b.ARTICLE.page(itemscope itemtype="http://schema.org/Article")
   .container
     .row
-      .col-xs-12
+      .col-xs-12(itemprop="articleBody")
         +e.img
-          img(src="img/6.jpg" alt="6")
+          img(itemprop="image" src="img/6.jpg" alt="6")
         +e.H2.title H2 Кому и зачем нужна сертификация?
         +e.text Сертификация необходима организациям для подтверждения соответствия всем строгим требованиям и нормам технической документации. И это не просто очередная бюрократическая издержка — наличие сертификата одинаково важно для обеих сторон:
         +e.UL.list

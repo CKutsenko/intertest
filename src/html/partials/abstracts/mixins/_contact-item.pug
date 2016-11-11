@@ -1,15 +1,16 @@
 mixin contactItem(title, span, city, adress, phone1, phone, fax1, fax, mail1, mail)
   +e.inner
-    +e.H2.title #{title}
+    +e.H2.title(itemprop="department") #{title}
       span #{span}
-    +e.P.city #{city}
-    +e.P.adress #{adress}
+    +e.adress-wrapper(itemprop="address")
+      +e.P.city #{city}
+      +e.P.adress #{adress}
     +e.wrapper
       span Tel:
-      +e.A.phone(href= phone1, target="_blank") #{phone}
+      +e.A.phone(itemprop="telephone" href= phone1, target="_blank") #{phone}
     +e.wrapper
       span Fax:
-      +e.A.phone(href= fax1, target="_blank") #{fax}
+      +e.A.phone(itemprop="faxNumber" ref= fax1, target="_blank") #{fax}
     +e.wrapper
       span Email:
-      +e.A.mail(href= mail1, target="_blank") #{mail}
+      +e.A.mail(itemprop="email" href= mail1, target="_blank") #{mail}

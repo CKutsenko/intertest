@@ -1,18 +1,18 @@
 mixin newsItem(img,date, mounth, title,text,author,catigories)
-  +b.news
+  +b.news(itemscope itemtype="http://schema.org/NewsArticle")
     +e.img
       +e.A.link(href="news.html")
-        img(src= "img/" + img alt)
+        img(itemprop="image" src= "img/" + img alt)
     +e.header
-      +e.date-inner
+      +e.date-inner(itemprop="dateline")
         +e.P.date #{date}
         +e.P.mounth #{mounth}
       +e.A.title(href="news.html") #{title}
     +e.contant
-      +e.P.text #{text}
+      +e.P.text(itemprop="text") #{text}
     +e.footer
       +e.meta
         i.fa.fa-user
-        +e.A.author(href="news.html") #{author}
+        +e.A.author(href="news.html" itemprop="author") #{author}
         i.fa.fa-folder-open
         +e.A.catigories(href="news.html") #{catigories}

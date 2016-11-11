@@ -5,32 +5,32 @@ include ../abstracts/bemto/bemto.pug
   .container
     .row
       +e.contacts
-        +e.UL.list
+        +e.UL.list(itemscope itemtype="http://schema.org/Organization")
           +e.LI.item
             +e.P.text Есть вопросы?
           +e.LI.item
             i.fa.fa-reply
-            +e.A.email(href="mailto:support@ sres.com ") support@ sres.com
+            +e.A.email(href="mailto:support@ sres.com " temprop="email") support@ sres.com
           +e.LI.item
             i.fa.fa-map-marker
-            +e.P.adress ул. Байкеров, Москва
+            +e.P.adress(itemprop="address") ул. Байкеров, Москва
           +e.LI.item
             i.fa.fa-phone
-            +e.A.phone(href="tel:+78122229899") +7 812 222 98-99
+            +e.A.phone(href="tel:+78122229899" itemprop="telephone") +7 812 222 98-99
       +e.socials
         ul
           +e.LI.socials-item
-            a(href="twitter.com" target="_blank")
+            a(href="http://twitter.com" target="_blank")
               i.fa.fa-twitter
           +e.LI.socials-item
-            a(href="facbook.com" target="_blank")
+            a(href="http://facbook.com" target="_blank")
               i.fa.fa-facebook-official
           +e.LI.socials-item
-            a(href="instagram.com" target="_blank")
+            a(href="http://instagram.com" target="_blank")
               i.fa.fa-instagram
           +e.LI.socials-item
-            a(href="ru.linkedin.com" target="_blank")
+            a(href="http://ru.linkedin.com" target="_blank")
               i.fa.fa-linkedin
           +e.LI.socials-item
-            a(href="vk.com" target="_blank")
+            a(href="http://vk.com" target="_blank")
               i.fa.fa-vk

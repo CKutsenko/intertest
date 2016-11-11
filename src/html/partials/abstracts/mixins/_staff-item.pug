@@ -1,17 +1,17 @@
 mixin staffItem(img, name, post, text)
-  +e.box
+  +e.box(itemscope itemtype="http://schema.org/Person")
     +e.img
-      img(src= "img/" + img alt)
+      img(itemprop="image" src= "img/" + img alt)
     +e.body
-      +e.P.name #{name}
-      +e.P.subtitle #{post}
+      +e.P.nam(itemprop="name") #{name}
+      +e.P.subtitle(itemprop="jobTitle") #{post}
       +e.P.text #{text}
     +e.socials
-      +e.A.btn(href="facebook.com" target="_blank")
+      +e.A.btn(href="facebook.com" target="_blank" itemprop="url")
         i.fa.fa-facebook
-      +e.A.btn(href="facebook.com" target="_blank")
+      +e.A.btn(href="facebook.com" target="_blank" itemprop="url")
         i.fa.fa-twitter
-      +e.A.btn(href="facebook.com" target="_blank")
+      +e.A.btn(href="facebook.com" target="_blank" itemprop="url")
         i.fa.fa-linkedin
-      +e.A.btn(href="facebook.com" target="_blank")
+      +e.A.btn(href="facebook.com" target="_blank" itemprop="url")
         i.fa.fa-google-plus

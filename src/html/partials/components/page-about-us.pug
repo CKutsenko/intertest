@@ -12,13 +12,14 @@ include ../abstracts/bemto/bemto.pug
             img(src="img/ab2.jpg" alt="services2")
           +e.img
             img(src="img/ab3.jpg" alt="services3")
-        +e.text-wrapper
-          +e.H3.title Обзор
+        +e.text-wrapper(itemscope itemtype="http://schema.org/Article")
+          +e.H3.title(itemprop="about") Обзор
             span компании
-          +e.P.text At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today. In addition to Truckload (TL) services, we have expanded our reach on the asset based side to include expedited services, reverse logistics and volume Less-Than-Truckload (LTL) shipments; as well as a compliment of non-asset based solutions to service our customers’ needs throughout North America.
-          +e.P.text Our family-run business values hard work, respect, commitment and teamwork and our workplace is characterized by the high energy, enthusiasm and effort of our employees who thrive in this positive environment. We are committed to providing our customers with first-rate service, which starts with our employees’ dedication to our enterprise of services.
-          +e.P.text The commitment we have to safety and security is unmatched. We pride ourselves on posting industry leading Compliance, Safety, Accountability (CSA) scores, as well as an industry low claims ratio to give you and your customers that piece of mind when your freight is in our hands. Our primary obligation to our customers and our community starts with the hiring and training of our team members and our pledge to put the safest drivers and equipment on the road.
-          +e.P.text From our experienced drivers to our knowledgeable office staff, Canava Transport has the desire and commitment to work hand-in-hand to develop transportation solution that is truly customized to your needs.
+          +e.body(itemprop="articleBody")
+            +e.P.text At Canava Transport, we know time is of the essence. We have used our legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is today. In addition to Truckload (TL) services, we have expanded our reach on the asset based side to include expedited services, reverse logistics and volume Less-Than-Truckload (LTL) shipments; as well as a compliment of non-asset based solutions to service our customers’ needs throughout North America.
+            +e.P.text Our family-run business values hard work, respect, commitment and teamwork and our workplace is characterized by the high energy, enthusiasm and effort of our employees who thrive in this positive environment. We are committed to providing our customers with first-rate service, which starts with our employees’ dedication to our enterprise of services.
+            +e.P.text The commitment we have to safety and security is unmatched. We pride ourselves on posting industry leading Compliance, Safety, Accountability (CSA) scores, as well as an industry low claims ratio to give you and your customers that piece of mind when your freight is in our hands. Our primary obligation to our customers and our community starts with the hiring and training of our team members and our pledge to put the safest drivers and equipment on the road.
+            +e.P.text From our experienced drivers to our knowledgeable office staff, Canava Transport has the desire and commitment to work hand-in-hand to develop transportation solution that is truly customized to your needs.
         +e.contact-stripe
           +e.P.stripe-title We will take care of your cargo or your passenger and deliver them safe and on time.
           +e.btn-inner

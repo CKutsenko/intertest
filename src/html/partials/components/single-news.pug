@@ -3,19 +3,19 @@ include ../abstracts/bemto/bemto.pug
 +b.white-bgr
   .container
     .row
-      +b.single-news
+      +b.single-news(itemscope itemtype="http://schema.org/NewsArticle")
         .row
           .col-xs-12.col-sm-2
-            +e.date-inner
+            +e.date-inner(itemprop="dateline")
               +e.P.mounth Мар
               +e.P.date 25
-          .col-xs-12.col-sm-10
+          .col-xs-12.col-sm-10(itemprop="articleBody")
             +e.img
               +e.A.link(href="single-news.html")
-                img(src= "img/6.jpg" alt="6" )
+                img(itemprop="image" src= "img/6.jpg" alt="6" )
             +e.meta
               i.fa.fa-user
-              +e.A.author(href="single-news.html") Ekaterina
+              +e.A.author(itemprop="author" href="single-news.html") Ekaterina
               i.fa.fa-folder-open
               +e.A.catigories(href="single-news.html") Warehouse
             +e.P.text--first It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12% more productive than their counterparts. It underlines staff morale and wellbeing is not just an HR goal: it’s fundamental to business performance levels.
@@ -27,7 +27,7 @@ include ../abstracts/bemto/bemto.pug
               +e.A.tag(href="single-news.html") Tip
               +e.A.tag(href="single-news.html") Trick
               +e.A.tag(href="single-news.html") Warehouse
-            +e.btn-wrapper
+            +e.btn-wrapper(itemprop="pagination")
               +e.A.previous(href="single-news.html")
                 +e.P.btn-title Previous Post
                 +e.P.btn-text Seafield logistics goes into administration

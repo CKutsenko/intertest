@@ -1,21 +1,21 @@
 mixin PageNewsItem(date, mounth, img, title,author,catigories, text)
-  +b.news-item
+  +b.news-item(itemscope itemtype="http://schema.org/NewsArticle")
     .row
       .col-xs-12.col-sm-2
-        +e.date-inner
+        +e.date-inner(itemprop="dateline")
           +e.P.mounth #{mounth}
           +e.P.date #{date}
       .col-xs-12.col-sm-10
         +e.img
           +e.A.link(href="single-news.html")
-            img(src= "img/" + img alt)
+            img(itemprop="image" src= "img/" + img alt)
         +e.contant
          +e.A.title #{title}
         +e.meta
           i.fa.fa-user
-          +e.A.author(href="single-news.html") #{author}
+          +e.A.author(href="single-news.html" itemprop="author") #{author}
           i.fa.fa-folder-open
           +e.A.catigories(href="single-news.html") #{catigories}
-        +e.P.text #{text}
+        +e.P.text(itemprop="about") #{text}
         +e.A.btn(href="single-news.html") Читать далее
           .fa.fa-chevron-right
