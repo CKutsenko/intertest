@@ -883,7 +883,7 @@ img {
     position: relative; }
     .header__item:nth-child(3) i {
       position: absolute;
-      top: 12px;
+      top: 16px;
       left: -13px; }
     .header__item:nth-child(3) p {
       margin-left: 55px; }

@@ -48,21 +48,21 @@
       <div class="container">
         <div class="row">
           <div class="header__contacts">
-            <ul class="header__list">
+            <ul class="header__list" itemscope itemtype="http://schema.org/Organization">
               <li class="header__item">
                 <p class="header__text">Есть вопросы?</p>
               </li>
               <li class="header__item">
                 <i class="fa fa-reply"></i>
-                <a class="header__email" href="mailto:support@ sres.com ">support@ sres.com</a>
+                <a class="header__email" href="mailto:support@ sres.com " temprop="email">support@ sres.com</a>
               </li>
               <li class="header__item">
                 <i class="fa fa-map-marker"></i>
-                <p class="header__adress">ул. Байкеров, Москва</p>
+                <p class="header__adress" itemprop="address">ул. Байкеров, Москва</p>
               </li>
               <li class="header__item">
                 <i class="fa fa-phone"></i>
-                <a class="header__phone" href="tel:+78122229899">+7 812 222 98-99</a>
+                <a class="header__phone" href="tel:+78122229899" itemprop="telephone">+7 812 222 98-99</a>
               </li>
             </ul>
           </div>
@@ -70,27 +70,27 @@
             <ul>
               <ul>
                 <li class="header__socials-item">
-                  <a href="twitter.com" target="_blank">
+                  <a href="http://twitter.com" target="_blank">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="facbook.com" target="_blank">
+                  <a href="http://facbook.com" target="_blank">
                     <i class="fa fa-facebook-official"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="instagram.com" target="_blank">
+                  <a href="http://instagram.com" target="_blank">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="ru.linkedin.com" target="_blank">
+                  <a href="http://ru.linkedin.com" target="_blank">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="vk.com" target="_blank">
+                  <a href="http://vk.com" target="_blank">
                     <i class="fa fa-vk"></i>
                   </a>
                 </li>
@@ -104,8 +104,8 @@
       <div class="container">
         <div class="row">
           <div class="nav__logo">
-            <a href="index.html">
-              <img src="img/logo.png">
+            <a href="index.html" itemscope itemtype="http://schema.org/Brand">
+              <img src="img/logo.png" alt="logo" title="logo" itemprop="logo">
             </a>
           </div>
           <div class="nav__menu">
@@ -208,12 +208,12 @@
         </div>
       </div>
       <!--Page-->
-      <article class="page">
+      <article class="page" itemscope itemtype="http://schema.org/Article">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12" itemprop="articleBody">
               <div class="page__img">
-                <img src="img/6.jpg" alt="6">
+                <img itemprop="image" src="img/6.jpg" alt="6">
               </div>
               <h2 class="page__title">H2 Кому и зачем нужна сертификация?</h2>
               <div class="page__text">Сертификация необходима организациям для подтверждения соответствия всем строгим требованиям и нормам технической документации. И это не просто очередная бюрократическая издержка — наличие сертификата одинаково важно для обеих сторон:</div>
@@ -230,9 +230,6 @@
                 <p class="page__text">
                   <b>Обязательная сертификация</b> Необходима для того, чтобы подтвердить соответствие требованиям, установленным законодательно. Выпустить в свободное обращение товары, входящие в утвержденный перечень, не имея на них нужных сертификатов,
                   попросту невозможно.</p>
-                <div class="page__img">
-                  <img src="img/6.jpg" alt="6">
-                </div>
                 <p class="page__text">
                   <b>Добровольная сертификация.</b> Проводится по собственной инициативе организации с целью:</p>
                 <ul class="page__list">
@@ -268,17 +265,17 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-6">
-              <div class="services__wrapper">
+              <div class="services__wrapper" itemscope itemtype="http://schema.org/Service">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__img">
-                      <img src="img/8-2.jpg" alt>
+                      <img itemprop="logo" src="img/8-2.jpg" alt>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__inner">
-                      <h3 class="services__name">Логистические решения</h3>
-                      <p class="services__text">Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.</p>
+                      <h3 class="services__name" itemprop="serviceType">Логистические решения</h3>
+                      <p class="services__text" itemprop="offers">Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.</p>
                       <a class="services__btn" href="page.html">Читать далее
                         <i class="fa fa-chevron-right"></i>
                       </a>
@@ -288,17 +285,17 @@
               </div>
             </div>
             <div class="col-xs-12 col-md-6">
-              <div class="services__wrapper">
+              <div class="services__wrapper" itemscope itemtype="http://schema.org/Service">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__img">
-                      <img src="img/6-3.jpg" alt>
+                      <img itemprop="logo" src="img/6-3.jpg" alt>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__inner">
-                      <h3 class="services__name">Сертификация качества</h3>
-                      <p class="services__text">When it comes to multimodal transport services, Canava Transport has connections you can trust.</p>
+                      <h3 class="services__name" itemprop="serviceType">Сертификация качества</h3>
+                      <p class="services__text" itemprop="offers">When it comes to multimodal transport services, Canava Transport has connections you can trust.</p>
                       <a class="services__btn" href="page.html">Читать далее
                         <i class="fa fa-chevron-right"></i>
                       </a>
@@ -308,17 +305,17 @@
               </div>
             </div>
             <div class="col-xs-12 col-md-6">
-              <div class="services__wrapper">
+              <div class="services__wrapper" itemscope itemtype="http://schema.org/Service">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__img">
-                      <img src="img/5-3.jpg" alt>
+                      <img itemprop="logo" src="img/5-3.jpg" alt>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__inner">
-                      <h3 class="services__name">Категория 3</h3>
-                      <p class="services__text">Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.</p>
+                      <h3 class="services__name" itemprop="serviceType">Категория 3</h3>
+                      <p class="services__text" itemprop="offers">Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.</p>
                       <a class="services__btn" href="page.html">Читать далее
                         <i class="fa fa-chevron-right"></i>
                       </a>
@@ -328,17 +325,17 @@
               </div>
             </div>
             <div class="col-xs-12 col-md-6">
-              <div class="services__wrapper">
+              <div class="services__wrapper" itemscope itemtype="http://schema.org/Service">
                 <div class="row">
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__img">
-                      <img src="img/4-3.jpg" alt>
+                      <img itemprop="logo" src="img/4-3.jpg" alt>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-6">
                     <div class="services__inner">
-                      <h3 class="services__name">Категория 4</h3>
-                      <p class="services__text">Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.</p>
+                      <h3 class="services__name" itemprop="serviceType">Категория 4</h3>
+                      <p class="services__text" itemprop="offers">Focuses on the packaging requirements of goods in transit, in particular for items traveling overland by road or rail.</p>
                       <a class="services__btn" href="page.html">Читать далее
                         <i class="fa fa-chevron-right"></i>
                       </a>
@@ -427,13 +424,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-3">
+          <div class="col-xs-12 col-md-4 col-lg-3" itemscope itemtype="http://schema.org/Organization">
             <h3 class="footer__subtitle">Контакты</h3>
-            <p class="footer__adress">Улица Лермонтова, Москва, 154234</p>
-            <a class="footer__phone" href="tel:89116783455">+7 921 234-23-23</a>
-            <a class="footer__mail" href="mailto:support@gmal.com">manager@gmail.com</a>
-            <a class="footer__phone" href="tel:89116783455">+7 911 678-34-34</a>
-            <a class="footer__mail" href="mailto:support@gmal.com">support@gmal.com</a>
+            <p class="footer__adress" itemprop="address">Улица Лермонтова, Москва, 154234</p>
+            <a class="footer__phone" href="tel:89116783455" itemprop="telephone">+7 921 234-23-23</a>
+            <a class="footer__mail" href="mailto:support@gmal.com" itemprop="email">manager@gmail.com</a>
+            <a class="footer__phone" href="tel:89116783455" itemprop="telephone">+7 911 678-34-34</a>
+            <a class="footer__mail" href="mailto:support@gmal.com" itemprop="email">support@gmal.com</a>
           </div>
         </div>
       </div>
@@ -448,27 +445,27 @@
             <div class="footer-copyright__socials"></div>
             <ul class="footer-copyright__list">
               <li class="footer-copyright__socials-item">
-                <a href="twitter.com" target="_blank">
+                <a href="http://twitter.com" target="_blank">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="facbook.com" target="_blank">
+                <a href="http://facbook.com" target="_blank">
                   <i class="fa fa-facebook-official"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="instagram.com" target="_blank">
+                <a href="http://instagram.com" target="_blank">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="ru.linkedin.com" target="_blank">
+                <a href="http://ru.linkedin.com" target="_blank">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="vk.com" target="_blank">
+                <a href="http://vk.com" target="_blank">
                   <i class="fa fa-vk"></i>
                 </a>
               </li>

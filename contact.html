@@ -48,21 +48,21 @@
       <div class="container">
         <div class="row">
           <div class="header__contacts">
-            <ul class="header__list">
+            <ul class="header__list" itemscope itemtype="http://schema.org/Organization">
               <li class="header__item">
                 <p class="header__text">Есть вопросы?</p>
               </li>
               <li class="header__item">
                 <i class="fa fa-reply"></i>
-                <a class="header__email" href="mailto:support@ sres.com ">support@ sres.com</a>
+                <a class="header__email" href="mailto:support@ sres.com " temprop="email">support@ sres.com</a>
               </li>
               <li class="header__item">
                 <i class="fa fa-map-marker"></i>
-                <p class="header__adress">ул. Байкеров, Москва</p>
+                <p class="header__adress" itemprop="address">ул. Байкеров, Москва</p>
               </li>
               <li class="header__item">
                 <i class="fa fa-phone"></i>
-                <a class="header__phone" href="tel:+78122229899">+7 812 222 98-99</a>
+                <a class="header__phone" href="tel:+78122229899" itemprop="telephone">+7 812 222 98-99</a>
               </li>
             </ul>
           </div>
@@ -70,27 +70,27 @@
             <ul>
               <ul>
                 <li class="header__socials-item">
-                  <a href="twitter.com" target="_blank">
+                  <a href="http://twitter.com" target="_blank">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="facbook.com" target="_blank">
+                  <a href="http://facbook.com" target="_blank">
                     <i class="fa fa-facebook-official"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="instagram.com" target="_blank">
+                  <a href="http://instagram.com" target="_blank">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="ru.linkedin.com" target="_blank">
+                  <a href="http://ru.linkedin.com" target="_blank">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="vk.com" target="_blank">
+                  <a href="http://vk.com" target="_blank">
                     <i class="fa fa-vk"></i>
                   </a>
                 </li>
@@ -104,8 +104,8 @@
       <div class="container">
         <div class="row">
           <div class="nav__logo">
-            <a href="index.html">
-              <img src="img/logo.png">
+            <a href="index.html" itemscope itemtype="http://schema.org/Brand">
+              <img src="img/logo.png" alt="logo" title="logo" itemprop="logo">
             </a>
           </div>
           <div class="nav__menu">
@@ -207,174 +207,190 @@
         </div>
       </div>
       <!--Contacts-->
-      <section class="contact">
+      <section class="contact" itemscope itemtype="http://schema.org/Organization">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">Headquarters
+                <h2 class="contact__title" itemprop="department">Headquarters
                   <span></span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">canava
+                <h2 class="contact__title" itemprop="department">canava
                   <span>england</span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">canava
+                <h2 class="contact__title" itemprop="department">canava
                   <span>england</span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">canava
+                <h2 class="contact__title" itemprop="department">canava
                   <span>england</span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">canava
+                <h2 class="contact__title" itemprop="department">canava
                   <span>england</span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">canava
+                <h2 class="contact__title" itemprop="department">canava
                   <span>england</span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">canava
+                <h2 class="contact__title" itemprop="department">canava
                   <span>england</span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <div class="contact__inner">
-                <h2 class="contact__title">canava
+                <h2 class="contact__title" itemprop="department">canava
                   <span>england</span>
                 </h2>
-                <p class="contact__city">Global Transport, New York</p>
-                <p class="contact__adress">66 Nicholson St. New York US</p>
+                <div class="contact__adress-wrapper" itemprop="address">
+                  <p class="contact__city">Global Transport, New York</p>
+                  <p class="contact__adress">66 Nicholson St. New York US</p>
+                </div>
                 <div class="contact__wrapper">
                   <span>Tel:</span>
-                  <a class="contact__phone" href="tel:012222989888" target="_blank">+012 222 989888</a>
+                  <a class="contact__phone" itemprop="telephone" href="tel:012222989888" target="_blank">+012 222 989888</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Fax:</span>
-                  <a class="contact__phone" href="tel:012222989899" target="_blank">+012 222 989899</a>
+                  <a class="contact__phone" itemprop="faxNumber" ref="tel:012222989899" target="_blank">+012 222 989899</a>
                 </div>
                 <div class="contact__wrapper">
                   <span>Email:</span>
-                  <a class="contact__mail" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
+                  <a class="contact__mail" itemprop="email" href="mailto:info@yourdomain.com" target="_blank">info@yourdomain.com</a>
                 </div>
               </div>
             </div>
@@ -387,7 +403,7 @@
               <span>hours</span>
             </h2>
             <p class="contact__text">Find out opening hours and information for Canava Transport. Thank you!</p>
-            <ul class="contact__list">
+            <ul class="contact__list" itemprop="openingHoursSpecification">
               <li class="contact__item">Monday:
                 <span>08:00 a.m – 06:00 p.m</span>
               </li>
@@ -484,13 +500,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-3">
+          <div class="col-xs-12 col-md-4 col-lg-3" itemscope itemtype="http://schema.org/Organization">
             <h3 class="footer__subtitle">Контакты</h3>
-            <p class="footer__adress">Улица Лермонтова, Москва, 154234</p>
-            <a class="footer__phone" href="tel:89116783455">+7 921 234-23-23</a>
-            <a class="footer__mail" href="mailto:support@gmal.com">manager@gmail.com</a>
-            <a class="footer__phone" href="tel:89116783455">+7 911 678-34-34</a>
-            <a class="footer__mail" href="mailto:support@gmal.com">support@gmal.com</a>
+            <p class="footer__adress" itemprop="address">Улица Лермонтова, Москва, 154234</p>
+            <a class="footer__phone" href="tel:89116783455" itemprop="telephone">+7 921 234-23-23</a>
+            <a class="footer__mail" href="mailto:support@gmal.com" itemprop="email">manager@gmail.com</a>
+            <a class="footer__phone" href="tel:89116783455" itemprop="telephone">+7 911 678-34-34</a>
+            <a class="footer__mail" href="mailto:support@gmal.com" itemprop="email">support@gmal.com</a>
           </div>
         </div>
       </div>
@@ -505,27 +521,27 @@
             <div class="footer-copyright__socials"></div>
             <ul class="footer-copyright__list">
               <li class="footer-copyright__socials-item">
-                <a href="twitter.com" target="_blank">
+                <a href="http://twitter.com" target="_blank">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="facbook.com" target="_blank">
+                <a href="http://facbook.com" target="_blank">
                   <i class="fa fa-facebook-official"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="instagram.com" target="_blank">
+                <a href="http://instagram.com" target="_blank">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="ru.linkedin.com" target="_blank">
+                <a href="http://ru.linkedin.com" target="_blank">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="vk.com" target="_blank">
+                <a href="http://vk.com" target="_blank">
                   <i class="fa fa-vk"></i>
                 </a>
               </li>

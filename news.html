@@ -48,21 +48,21 @@
       <div class="container">
         <div class="row">
           <div class="header__contacts">
-            <ul class="header__list">
+            <ul class="header__list" itemscope itemtype="http://schema.org/Organization">
               <li class="header__item">
                 <p class="header__text">Есть вопросы?</p>
               </li>
               <li class="header__item">
                 <i class="fa fa-reply"></i>
-                <a class="header__email" href="mailto:support@ sres.com ">support@ sres.com</a>
+                <a class="header__email" href="mailto:support@ sres.com " temprop="email">support@ sres.com</a>
               </li>
               <li class="header__item">
                 <i class="fa fa-map-marker"></i>
-                <p class="header__adress">ул. Байкеров, Москва</p>
+                <p class="header__adress" itemprop="address">ул. Байкеров, Москва</p>
               </li>
               <li class="header__item">
                 <i class="fa fa-phone"></i>
-                <a class="header__phone" href="tel:+78122229899">+7 812 222 98-99</a>
+                <a class="header__phone" href="tel:+78122229899" itemprop="telephone">+7 812 222 98-99</a>
               </li>
             </ul>
           </div>
@@ -70,27 +70,27 @@
             <ul>
               <ul>
                 <li class="header__socials-item">
-                  <a href="twitter.com" target="_blank">
+                  <a href="http://twitter.com" target="_blank">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="facbook.com" target="_blank">
+                  <a href="http://facbook.com" target="_blank">
                     <i class="fa fa-facebook-official"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="instagram.com" target="_blank">
+                  <a href="http://instagram.com" target="_blank">
                     <i class="fa fa-instagram"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="ru.linkedin.com" target="_blank">
+                  <a href="http://ru.linkedin.com" target="_blank">
                     <i class="fa fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="header__socials-item">
-                  <a href="vk.com" target="_blank">
+                  <a href="http://vk.com" target="_blank">
                     <i class="fa fa-vk"></i>
                   </a>
                 </li>
@@ -104,8 +104,8 @@
       <div class="container">
         <div class="row">
           <div class="nav__logo">
-            <a href="index.html">
-              <img src="img/logo.png">
+            <a href="index.html" itemscope itemtype="http://schema.org/Brand">
+              <img src="img/logo.png" alt="logo" title="logo" itemprop="logo">
             </a>
           </div>
           <div class="nav__menu">
@@ -211,10 +211,10 @@
         <div class="container">
           <div class="row">
             <section class="page-news">
-              <div class="news-item">
+              <div class="news-item" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="row">
                   <div class="col-xs-12 col-sm-2">
-                    <div class="news-item__date-inner">
+                    <div class="news-item__date-inner" itemprop="dateline">
                       <p class="news-item__mounth">Мар</p>
                       <p class="news-item__date">25</p>
                     </div>
@@ -222,7 +222,7 @@
                   <div class="col-xs-12 col-sm-10">
                     <div class="news-item__img">
                       <a class="news-item__link" href="single-news.html">
-                        <img src="img/6.jpg" alt>
+                        <img itemprop="image" src="img/6.jpg" alt>
                       </a>
                     </div>
                     <div class="news-item__contant">
@@ -230,21 +230,21 @@
                     </div>
                     <div class="news-item__meta">
                       <i class="fa fa-user"></i>
-                      <a class="news-item__author" href="single-news.html">Ekaterina</a>
+                      <a class="news-item__author" href="single-news.html" itemprop="author">Ekaterina</a>
                       <i class="fa fa-folder-open"></i>
                       <a class="news-item__catigories" href="single-news.html">Warehouse</a>
                     </div>
-                    <p class="news-item__text">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
+                    <p class="news-item__text" itemprop="about">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
                     <a class="news-item__btn" href="single-news.html">Читать далее
                       <div class="fa fa-chevron-right"></div>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="news-item" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="row">
                   <div class="col-xs-12 col-sm-2">
-                    <div class="news-item__date-inner">
+                    <div class="news-item__date-inner" itemprop="dateline">
                       <p class="news-item__mounth">Мар</p>
                       <p class="news-item__date">25</p>
                     </div>
@@ -252,7 +252,7 @@
                   <div class="col-xs-12 col-sm-10">
                     <div class="news-item__img">
                       <a class="news-item__link" href="single-news.html">
-                        <img src="img/5.jpg" alt>
+                        <img itemprop="image" src="img/5.jpg" alt>
                       </a>
                     </div>
                     <div class="news-item__contant">
@@ -260,11 +260,11 @@
                     </div>
                     <div class="news-item__meta">
                       <i class="fa fa-user"></i>
-                      <a class="news-item__author" href="single-news.html">Ekaterina</a>
+                      <a class="news-item__author" href="single-news.html" itemprop="author">Ekaterina</a>
                       <i class="fa fa-folder-open"></i>
                       <a class="news-item__catigories" href="single-news.html">Warehouse</a>
                     </div>
-                    <p class="news-item__text">Many of you will be aware that the Transport Select Committee is conducting an inquiry into the skills and workforce planning of the road haulage sector. In particular the Committee is investigating what action Government has taken
+                    <p class="news-item__text" itemprop="about">Many of you will be aware that the Transport Select Committee is conducting an inquiry into the skills and workforce planning of the road haulage sector. In particular the Committee is investigating what action Government has taken
                       to address concer...</p>
                     <a class="news-item__btn" href="single-news.html">Читать далее
                       <div class="fa fa-chevron-right"></div>
@@ -272,10 +272,10 @@
                   </div>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="news-item" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="row">
                   <div class="col-xs-12 col-sm-2">
-                    <div class="news-item__date-inner">
+                    <div class="news-item__date-inner" itemprop="dateline">
                       <p class="news-item__mounth">Мар</p>
                       <p class="news-item__date">25</p>
                     </div>
@@ -283,7 +283,7 @@
                   <div class="col-xs-12 col-sm-10">
                     <div class="news-item__img">
                       <a class="news-item__link" href="single-news.html">
-                        <img src="img/4.jpg" alt>
+                        <img itemprop="image" src="img/4.jpg" alt>
                       </a>
                     </div>
                     <div class="news-item__contant">
@@ -291,21 +291,21 @@
                     </div>
                     <div class="news-item__meta">
                       <i class="fa fa-user"></i>
-                      <a class="news-item__author" href="single-news.html">Ekaterina</a>
+                      <a class="news-item__author" href="single-news.html" itemprop="author">Ekaterina</a>
                       <i class="fa fa-folder-open"></i>
                       <a class="news-item__catigories" href="single-news.html">Transport</a>
                     </div>
-                    <p class="news-item__text">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
+                    <p class="news-item__text" itemprop="about">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
                     <a class="news-item__btn" href="single-news.html">Читать далее
                       <div class="fa fa-chevron-right"></div>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="news-item" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="row">
                   <div class="col-xs-12 col-sm-2">
-                    <div class="news-item__date-inner">
+                    <div class="news-item__date-inner" itemprop="dateline">
                       <p class="news-item__mounth">Мар</p>
                       <p class="news-item__date">25</p>
                     </div>
@@ -313,7 +313,7 @@
                   <div class="col-xs-12 col-sm-10">
                     <div class="news-item__img">
                       <a class="news-item__link" href="single-news.html">
-                        <img src="img/3.jpg" alt>
+                        <img itemprop="image" src="img/3.jpg" alt>
                       </a>
                     </div>
                     <div class="news-item__contant">
@@ -321,11 +321,11 @@
                     </div>
                     <div class="news-item__meta">
                       <i class="fa fa-user"></i>
-                      <a class="news-item__author" href="single-news.html">Ekaterina</a>
+                      <a class="news-item__author" href="single-news.html" itemprop="author">Ekaterina</a>
                       <i class="fa fa-folder-open"></i>
                       <a class="news-item__catigories" href="single-news.html">Warehouse</a>
                     </div>
-                    <p class="news-item__text">Many of you will be aware that the Transport Select Committee is conducting an inquiry into the skills and workforce planning of the road haulage sector. In particular the Committee is investigating what action Government has taken
+                    <p class="news-item__text" itemprop="about">Many of you will be aware that the Transport Select Committee is conducting an inquiry into the skills and workforce planning of the road haulage sector. In particular the Committee is investigating what action Government has taken
                       to address concer...</p>
                     <a class="news-item__btn" href="single-news.html">Читать далее
                       <div class="fa fa-chevron-right"></div>
@@ -333,10 +333,10 @@
                   </div>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="news-item" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="row">
                   <div class="col-xs-12 col-sm-2">
-                    <div class="news-item__date-inner">
+                    <div class="news-item__date-inner" itemprop="dateline">
                       <p class="news-item__mounth">Мар</p>
                       <p class="news-item__date">25</p>
                     </div>
@@ -344,7 +344,7 @@
                   <div class="col-xs-12 col-sm-10">
                     <div class="news-item__img">
                       <a class="news-item__link" href="single-news.html">
-                        <img src="img/2.jpg" alt>
+                        <img itemprop="image" src="img/2.jpg" alt>
                       </a>
                     </div>
                     <div class="news-item__contant">
@@ -352,21 +352,21 @@
                     </div>
                     <div class="news-item__meta">
                       <i class="fa fa-user"></i>
-                      <a class="news-item__author" href="single-news.html">Ekaterina</a>
+                      <a class="news-item__author" href="single-news.html" itemprop="author">Ekaterina</a>
                       <i class="fa fa-folder-open"></i>
                       <a class="news-item__catigories" href="single-news.html">Warehouse</a>
                     </div>
-                    <p class="news-item__text">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
+                    <p class="news-item__text" itemprop="about">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
                     <a class="news-item__btn" href="single-news.html">Читать далее
                       <div class="fa fa-chevron-right"></div>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="news-item">
+              <div class="news-item" itemscope itemtype="http://schema.org/NewsArticle">
                 <div class="row">
                   <div class="col-xs-12 col-sm-2">
-                    <div class="news-item__date-inner">
+                    <div class="news-item__date-inner" itemprop="dateline">
                       <p class="news-item__mounth">Мар</p>
                       <p class="news-item__date">25</p>
                     </div>
@@ -374,7 +374,7 @@
                   <div class="col-xs-12 col-sm-10">
                     <div class="news-item__img">
                       <a class="news-item__link" href="single-news.html">
-                        <img src="img/7.jpg" alt>
+                        <img itemprop="image" src="img/7.jpg" alt>
                       </a>
                     </div>
                     <div class="news-item__contant">
@@ -382,11 +382,11 @@
                     </div>
                     <div class="news-item__meta">
                       <i class="fa fa-user"></i>
-                      <a class="news-item__author" href="single-news.html">Ekaterina</a>
+                      <a class="news-item__author" href="single-news.html" itemprop="author">Ekaterina</a>
                       <i class="fa fa-folder-open"></i>
                       <a class="news-item__catigories" href="single-news.html">Warehouse</a>
                     </div>
-                    <p class="news-item__text">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
+                    <p class="news-item__text" itemprop="about">It’s a well-known fact that happy and motivated workers produce better results. A recent study found that happier workers were 12%...</p>
                     <a class="news-item__btn" href="single-news.html">Читать далее
                       <div class="fa fa-chevron-right"></div>
                     </a>
@@ -508,13 +508,13 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-4 col-lg-3">
+          <div class="col-xs-12 col-md-4 col-lg-3" itemscope itemtype="http://schema.org/Organization">
             <h3 class="footer__subtitle">Контакты</h3>
-            <p class="footer__adress">Улица Лермонтова, Москва, 154234</p>
-            <a class="footer__phone" href="tel:89116783455">+7 921 234-23-23</a>
-            <a class="footer__mail" href="mailto:support@gmal.com">manager@gmail.com</a>
-            <a class="footer__phone" href="tel:89116783455">+7 911 678-34-34</a>
-            <a class="footer__mail" href="mailto:support@gmal.com">support@gmal.com</a>
+            <p class="footer__adress" itemprop="address">Улица Лермонтова, Москва, 154234</p>
+            <a class="footer__phone" href="tel:89116783455" itemprop="telephone">+7 921 234-23-23</a>
+            <a class="footer__mail" href="mailto:support@gmal.com" itemprop="email">manager@gmail.com</a>
+            <a class="footer__phone" href="tel:89116783455" itemprop="telephone">+7 911 678-34-34</a>
+            <a class="footer__mail" href="mailto:support@gmal.com" itemprop="email">support@gmal.com</a>
           </div>
         </div>
       </div>
@@ -529,27 +529,27 @@
             <div class="footer-copyright__socials"></div>
             <ul class="footer-copyright__list">
               <li class="footer-copyright__socials-item">
-                <a href="twitter.com" target="_blank">
+                <a href="http://twitter.com" target="_blank">
                   <i class="fa fa-twitter"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="facbook.com" target="_blank">
+                <a href="http://facbook.com" target="_blank">
                   <i class="fa fa-facebook-official"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="instagram.com" target="_blank">
+                <a href="http://instagram.com" target="_blank">
                   <i class="fa fa-instagram"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="ru.linkedin.com" target="_blank">
+                <a href="http://ru.linkedin.com" target="_blank">
                   <i class="fa fa-linkedin"></i>
                 </a>
               </li>
               <li class="footer-copyright__socials-item">
-                <a href="vk.com" target="_blank">
+                <a href="http://vk.com" target="_blank">
                   <i class="fa fa-vk"></i>
                 </a>
               </li>
