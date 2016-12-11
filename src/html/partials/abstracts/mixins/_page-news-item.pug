@@ -1,6 +1,6 @@
 mixin PageNewsItem(date, mounth, img, title,author,catigories, text)
   +b.news-item(itemscope itemtype="http://schema.org/NewsArticle")
-    .row
+    .row(itemprop="articleBody")
       .col-xs-12.col-sm-2
         +e.date-inner(itemprop="dateline")
           +e.P.mounth #{mounth}

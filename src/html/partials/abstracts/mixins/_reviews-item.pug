@@ -1,7 +1,7 @@
 mixin reviewsItem(img,name,text)
-  +b.reviews
+  +b.reviews(itemscope itemtype="http://schema.org/Review")
     +e.contant
-      +e.box(itemscope itemtype="http://schema.org/Review")
+      +e.box(itemprop="itemReviewed")
         +e.img(itemprop="reviewRating")
           img(src= "img/" + img alt)
         +e.H3.name(itemprop="author") #{name}

@@ -3,7 +3,7 @@ mixin newsItem(img,date, mounth, title,text,author,catigories)
     +e.img
       +e.A.link(href="news.html")
         img(itemprop="image" src= "img/" + img alt)
-    +e.header
+    +e.header(itemprop="articleBody")
       +e.date-inner(itemprop="dateline")
         +e.P.date #{date}
         +e.P.mounth #{mounth}
